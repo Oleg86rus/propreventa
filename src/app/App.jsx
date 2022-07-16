@@ -1,9 +1,23 @@
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import MainPage from './pages/mainPage';
+import aboutUs from './pages/aboutUs';
+import doctors from './pages/doctors';
+import analyzes from './pages/analizes';
+import geneticResearch from './pages/geneticResearch';
+import ivTherapy from './pages/ivTherapy';
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>in process</h1>
-      </header>
+    <div>
+      <Switch>
+        <Route path='/' exact component={MainPage}/>
+        <Route path='/about_us' component={aboutUs} />
+        <Route path='/analyzes' component={analyzes} />
+        <Route path='/doctors' component={doctors} />
+        <Route path='/genetic_research' component={geneticResearch} />
+        <Route path='/iv_therapy' component={ivTherapy} />
+      </Switch>
     </div>
   );
 }

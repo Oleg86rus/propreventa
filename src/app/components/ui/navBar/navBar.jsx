@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { company } from '../../utils/constants';
+import { company } from '../../../utils/constants';
 
-
-export default function Example() {
+const Navbar = () => {
   return (
     <>
       <div className='flex justify-between items-center h-[50px] px-5 mt-5 mb-5'>
-        <img src="../../assets/logo.jpg" alt="logo"/>
+        <img src="../../../assets/logo.jpg" alt="logo"/>
         <div className='flex flex-col items-center w-[172px] h-[60px]'>
           <p className='font-400 line-height-140 font-bold tracking-wider text-base letter-spacing-[0.05em]'>{company.phone}</p>
           <p className='font-400'>{company.email}</p>
@@ -38,6 +37,6 @@ export default function Example() {
         </div>
       </nav>
     </>
-    
   );
-}
+};
+export default Navbar;

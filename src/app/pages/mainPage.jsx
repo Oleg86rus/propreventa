@@ -1,10 +1,10 @@
 import React from 'react';
+import NavBarMainPage from '../components/ui/navBar/navBarMainPage';
 
-const Main = () => {
-  
+const MainPage = () => {
   return (
-    <h1>propreventa</h1>
+    <NavBarMainPage/>
   );
 };
 
-export default Main;
+export default MainPage;
