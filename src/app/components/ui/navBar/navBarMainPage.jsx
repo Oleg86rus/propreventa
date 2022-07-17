@@ -11,8 +11,10 @@ const NavbarMainPage = () => {
         <h1 className='absolute top-[150px] font-extralight text-4xl tracking-wider text-right'>{company.description.toUpperCase()}</h1>
       </div>
       <div className='flex justify-between items-center w-[805px]'>
-        <div className='navbarMainPage'>
-          <NavLink exact className="mr-2" to="/checkups">Чек-апы</NavLink>
+        <div >
+          <span className='navbarMainPage flex items-center'>
+            <NavLink exact className="mr-2" to="/checkups">Чек-апы</NavLink>
+          </span>
         </div>
         <div className='navbarMainPage'>
           <NavLink exact className="mr-2" to="/analyzes">Анализы</NavLink>

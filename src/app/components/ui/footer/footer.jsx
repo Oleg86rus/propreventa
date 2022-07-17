@@ -23,7 +23,7 @@ const Footer = () => {
         <NavLink to='/' >Контакты</NavLink>
       </div>
       <div>
-        <img src="../../assets/arrowFooter.png" alt="arrow"/>
+        <img srcSet="../../../assets/arrowFooter.png" alt="arrow"/>
       </div>
       <div>
         <button className='py-2 px-4 mr-2 rounded hover:shadow-md transition-all border-2 bg-none decoration-white'>Заказать звонок</button>
