@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/ui/navBar/navBar';
 
-const ivTherapy = () => {
+const IVTherapy = () => {
   
   return (
     <>
@@ -11,4 +11,4 @@ const ivTherapy = () => {
   );
 };
 
-export default ivTherapy;
+export default IVTherapy;

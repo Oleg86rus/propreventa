@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/ui/navBar/navBar';
 
-const doctors = () => {
+const Doctors = () => {
   
   return (
     <>
@@ -11,4 +11,4 @@ const doctors = () => {
   );
 };
 
-export default doctors;
+export default Doctors;

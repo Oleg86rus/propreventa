@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/ui/navBar/navBar';
 
-const geneticResearch = () => {
+const GeneticResearch = () => {
   
   return (
     <>
@@ -11,4 +11,4 @@ const geneticResearch = () => {
   );
 };
 
-export default geneticResearch;
+export default GeneticResearch;

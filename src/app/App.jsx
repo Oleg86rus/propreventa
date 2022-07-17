@@ -1,25 +1,29 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import MainPage from './pages/mainPage';
-import aboutUs from './pages/aboutUs';
-import doctors from './pages/doctors';
-import analyzes from './pages/analizes';
-import geneticResearch from './pages/geneticResearch';
-import ivTherapy from './pages/ivTherapy';
-import checkups from './pages/checkups';
+import AboutUs from './pages/aboutUs';
+import Doctors from './pages/doctors';
+import Analyzes from './pages/analizes';
+import GeneticResearch from './pages/geneticResearch';
+import IVTherapy from './pages/IVTherapy';
+import Checkups from './pages/checkups';
+import Footer from './components/ui/footer/footer';
+import Header from './components/ui/header/header';
 
 function App() {
   return (
     <div>
+      <Header/>
       <Switch>
         <Route path='/' exact component={MainPage}/>
-        <Route path='/about_us' component={aboutUs} />
-        <Route path='/analyzes' component={analyzes} />
-        <Route path='/doctors' component={doctors} />
-        <Route path='/checkups' component={checkups} />
-        <Route path='/genetic_research' component={geneticResearch} />
-        <Route path='/iv_therapy' component={ivTherapy} />
+        <Route path='/about_us' component={AboutUs} />
+        <Route path='/analyzes' component={Analyzes} />
+        <Route path='/doctors' component={Doctors} />
+        <Route path='/checkups' component={Checkups} />
+        <Route path='/genetic_research' component={GeneticResearch} />
+        <Route path='/iv_therapy' component={IVTherapy} />
       </Switch>
+      <Footer/>
     </div>
   );
 }
