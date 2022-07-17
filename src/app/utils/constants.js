@@ -6,5 +6,6 @@ export const company = {
     instagram: '',
     
   },
-  date: '2021 - 2022'
+  date: '2021 - 2022',
+  description: 'Клиника интегративной персональной медицины'
 };

@@ -19,7 +19,10 @@ const Navbar = () => {
               <NavLink exact className="mr-2" to="/">Главная</NavLink>
             </li>
             <li className="">
-              <NavLink exact className="mr-2" to="/users">IV-терапия</NavLink>
+              <NavLink exact className="mr-2" to="/checkups">Чек-апы</NavLink>
+            </li>
+            <li className="">
+              <NavLink exact className="mr-2" to="/iv_therapy">IV-терапия</NavLink>
             </li>
             <li className="">
               <NavLink exact className="mr-2" to="/analyzes">Анализы</NavLink>

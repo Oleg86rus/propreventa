@@ -3,7 +3,9 @@ import NavBarMainPage from '../components/ui/navBar/navBarMainPage';
 
 const MainPage = () => {
   return (
-    <NavBarMainPage/>
+    <div className='container'>
+      <NavBarMainPage/>
+    </div>
   );
 };
 
