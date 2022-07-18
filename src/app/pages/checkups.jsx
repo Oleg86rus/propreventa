@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/ui/navBar/navBar';
 
-const checkups = () => {
+const Checkups = () => {
   return (
     <div>
       <Navbar/>
@@ -10,4 +10,4 @@ const checkups = () => {
   );
 };
 
-export default checkups;
+export default Checkups;
