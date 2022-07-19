@@ -4,12 +4,16 @@ const chalk = require('chalk');
 const mongoose = require('mongoose')
 const initDatabase = require('./startUp/initDatabase')
 const app = express();
+const routes = require('./routes')
+
 
 
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
+app.use('/api', routes);
 
-const PORT = config.get('port') ?? 8081;
+
+const PORT = config.get('port') ?? 8080;
 
 async function start() {
   try {
@@ -28,4 +32,4 @@ async function start() {
   
 }
 
-start()
+start();

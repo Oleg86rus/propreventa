@@ -2,9 +2,9 @@ const checkUpsMock = require('../mock/checkUps.json');
 const doctorsMock = require('../mock/doctors.json');
 const droppersMock = require('../mock/droppers.json');
 const geneticResearchMock = require('../mock/geneticResearch.json');
-const CheckUp = require('../models/CheckUp');
-const Doctor = require('../models/Doctor');
-const Droppers = require('../models/Dropper');
+const CheckUp = require('../models/checkups');
+const Doctor = require('../models/doctors');
+const Droppers = require('../models/droppers');
 const GeneticResearch = require('../models/GeneticResearch');
 
 async function createInitialEntity(Model, data) {

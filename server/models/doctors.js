@@ -7,11 +7,9 @@ const schema = new Schema({
   },
   skills: {
     type: Array,
-    required: true
   },
   photoUrl: {
     type: String,
-    required: true
   }
 }, {
   timestamps: true
