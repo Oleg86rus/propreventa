@@ -1,5 +1,5 @@
 const express = require('express');
-const Doctor = require('../models/doctors');
+const Doctor = require('../models/Doctors');
 const router = express.Router({mergeParams: true});
 
 // /doctors
