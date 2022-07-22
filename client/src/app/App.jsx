@@ -9,6 +9,7 @@ import IVTherapy from './pages/IVTherapy';
 import Checkups from './pages/checkups';
 import Footer from './components/ui/footer/footer';
 import Header from './components/ui/header/header';
+import Contacts from './pages/contacts';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/checkups' component={Checkups} />
         <Route path='/genetic_research' component={GeneticResearch} />
         <Route path='/iv_therapy' component={IVTherapy} />
+        <Route path='/contacts' component={Contacts} />
       </Switch>
       <Footer/>
     </div>

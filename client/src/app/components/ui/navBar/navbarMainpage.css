@@ -1,6 +1,8 @@
 .navbarMainPage {
-    width: 170px;
-    height: 150px;
+    margin-right: -70px;
+    margin-bottom: -30px;
+    width: 330px;
+    height: 300px;
     background-color: #8e7373;
     clip-path: polygon(30% 10%, 30% 10%, 60% 30%, 60% 70%, 30% 90%, 30% 90%, 0% 70%, 0% 30%);
 }
