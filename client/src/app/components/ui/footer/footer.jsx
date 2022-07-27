@@ -1,12 +1,14 @@
 import React from 'react';
 import { company } from '../../../utils/constants';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import arrow from '../../../assets/arrowFooter.png';
 
 const Footer = () => {
   return (
     <div className="flex justify-between items-center h-[374px]">
       <div>
-        <p>{company.name.toUpperCase()}</p>
+        <Link to='/'>{company.name.toUpperCase()}</Link>
+        <a href=""></a>
       </div>
       <div className="flex justify-between w-[270px] h-[158px] items-center flex-col flex-wrap">
         <div>
@@ -15,15 +17,15 @@ const Footer = () => {
         <NavLink to='/' >Главная</NavLink>
         <NavLink to='/' >О клинике</NavLink>
         <NavLink to='/' >Услуги</NavLink>
-        <NavLink to='/' >Анализы</NavLink>
-        <NavLink to='/' >Чек-апы</NavLink>
-        <NavLink to='/' >Врачи</NavLink>
-        <NavLink to='/' >Капельницы</NavLink>
+        <NavLink to='/analyzes' >Анализы</NavLink>
+        <NavLink to='/checkups' >Чек-апы</NavLink>
+        <NavLink to='/doctors' >Врачи</NavLink>
+        <NavLink to='/iv_therapy' >IV-терапия</NavLink>
         <a href="client/src/app/components/ui/footer/footer">Запись онлайн</a>
-        <NavLink to='/' >Контакты</NavLink>
+        <NavLink to='/contacts' >Контакты</NavLink>
       </div>
       <div>
-        <img srcSet="../../../assets/arrowFooter.png" alt="arrow"/>
+        <img src={arrow} alt="arrow"/>
       </div>
       <div>
         <button className='py-2 px-4 mr-2 rounded hover:shadow-md transition-all border-2 bg-none decoration-white'>Заказать звонок</button>
