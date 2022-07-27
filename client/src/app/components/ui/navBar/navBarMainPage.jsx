@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavbarMainPage = () => {
   return (
-    <div className='flex justify-between h-[530px] w-[1150px]'>
+    <div className='flex justify-between h-[530px] w-[1150px] container m-auto'>
       <div className='flex justify-between flex-col relative w-[343px]'>
         <p>{company.date}</p>
         <h1 className='absolute top-[150px] font-extralight text-4xl tracking-wider text-right'>{company.description.toUpperCase()}</h1>

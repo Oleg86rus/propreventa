@@ -13,7 +13,7 @@ import Contacts from './pages/contacts';
 
 function App() {
   return (
-    <div>
+    <div className='container m-auto'>
       <Header/>
       <Switch>
         <Route path='/' exact component={MainPage}/>
