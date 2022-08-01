@@ -10,22 +10,25 @@ import Checkups from './pages/checkups';
 import Footer from './components/ui/footer/footer';
 import Header from './components/ui/header/header';
 import Contacts from './pages/contacts';
+import AppLoader from './components/ui/hoc/appLoader';
 
 function App() {
   return (
     <div className='container m-auto'>
-      <Header/>
-      <Switch>
-        <Route path='/' exact component={MainPage}/>
-        <Route path='/about_us' component={AboutUs} />
-        <Route path='/analyzes' component={Analyzes} />
-        <Route path='/doctors' component={Doctors} />
-        <Route path='/checkups' component={Checkups} />
-        <Route path='/genetic_research' component={GeneticResearch} />
-        <Route path='/iv_therapy' component={IVTherapy} />
-        <Route path='/contacts' component={Contacts} />
-      </Switch>
-      <Footer/>
+      <AppLoader>
+        <Header/>
+        <Switch>
+          <Route path='/' exact component={MainPage}/>
+          <Route path='/aboutUs' component={AboutUs} />
+          <Route path='/analyzes' component={Analyzes} />
+          <Route path='/doctors' component={Doctors} />
+          <Route path='/checkups' component={Checkups} />
+          <Route path='/geneticResearch' component={GeneticResearch} />
+          <Route path='/IVTherapy' component={IVTherapy} />
+          <Route path='/contacts' component={Contacts} />
+        </Switch>
+        <Footer/>
+      </AppLoader>
     </div>
   );
 }

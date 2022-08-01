@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from '../components/ui/navBar/navBar';
+import CardList from '../components/ui/card/cardList';
 
 const IVTherapy = () => {
   
   return (
     <>
       <Navbar/>
-      <h1>IV THERAPY</h1>
+      <CardList/>
     </>
   );
 };

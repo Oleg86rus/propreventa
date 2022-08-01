@@ -1,12 +1,13 @@
 import React from 'react';
 import Navbar from '../components/ui/navBar/navBar';
+import CardList from '../components/ui/card/cardList';
 
 const GeneticResearch = () => {
   
   return (
     <>
       <Navbar/>
-      <h1>genetic Research</h1>
+      <CardList/>
     </>
   );
 };
