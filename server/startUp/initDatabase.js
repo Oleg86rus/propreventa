@@ -25,22 +25,22 @@ async function createInitialEntity(Model, data) {
 
 module.exports = async () => {
   const checkUps = await CheckUp.find()
-  if (checkUps.length !== checkUpsMock) {
+  if (checkUps.length !== checkUpsMock.length) {
     await createInitialEntity(CheckUp, checkUpsMock)
   }
   
   const doctors = await Doctor.find()
-  if (doctors.length !== doctorsMock) {
+  if (doctors.length !== doctorsMock.length) {
     await createInitialEntity(Doctor, doctorsMock)
   }
   
   const droppers = await Droppers.find()
-  if (droppers.length !== droppersMock) {
+  if (droppers.length !== droppersMock.length) {
     await createInitialEntity(Droppers, droppersMock)
   }
   
   const geneticResearch = await GeneticResearch.find()
-  if (geneticResearch.length !== geneticResearchMock) {
+  if (geneticResearch.length !== geneticResearchMock.length) {
     await createInitialEntity(GeneticResearch, geneticResearchMock)
   }
 }
