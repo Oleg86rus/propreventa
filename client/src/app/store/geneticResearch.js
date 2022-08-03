@@ -26,6 +26,8 @@ const geneticResearchSlice = createSlice({
 const {reducer: geneticResearchReducer, actions} = geneticResearchSlice;
 const {geneticResearchRequested, geneticResearchReceived, geneticResearchRequestedFailed} = actions;
 
+export const getGeneticResearch = () => state => state.checkups.entities;
+
 export const loadGeneticResearchList = () => async (dispatch) => {
   dispatch(geneticResearchRequested());
   try {

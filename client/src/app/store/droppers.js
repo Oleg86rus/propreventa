@@ -26,6 +26,8 @@ const droppersSlice = createSlice({
 const {reducer: droppersReducer, actions} = droppersSlice;
 const {droppersRequested, droppersReceived, droppersRequestedFailed} = actions;
 
+export const getDroppers = () => state => state.checkups.entities;
+
 export const loadDroppersList = () => async (dispatch) => {
   dispatch(droppersRequested());
   try {

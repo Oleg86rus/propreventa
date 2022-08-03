@@ -30,7 +30,6 @@ export const loadCheckupsList = () => async (dispatch) => {
   dispatch(checkupsRequested());
   try {
     const { content } = await checkupsService.get();
-    console.log(content);
     dispatch(checkupsReceived(content));
   } catch (error) {
     dispatch(checkupsRequestedFailed(error.message));

@@ -26,6 +26,8 @@ const doctorsSlice = createSlice({
 const {reducer: doctorsReducer, actions} = doctorsSlice;
 const {doctorsRequested, doctorsReceived, doctorsRequestedFailed} = actions;
 
+export const getDoctors = () => state => state.checkups.entities;
+
 export const loadDoctorsList = () => async (dispatch) => {
   dispatch(doctorsRequested());
   try {
