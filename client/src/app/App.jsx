@@ -11,6 +11,7 @@ import Footer from './components/ui/footer/footer';
 import Header from './components/ui/header/header';
 import Contacts from './pages/contacts';
 import AppLoader from './components/ui/hoc/appLoader';
+import Login from './pages/login';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Header/>
         <Switch>
           <Route path='/' exact component={MainPage}/>
+          <Route path='/login' exact component={Login}/>
           <Route path='/aboutUs' component={AboutUs} />
           <Route path='/analyzes' component={Analyzes} />
           <Route path='/doctors' component={Doctors} />

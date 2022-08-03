@@ -11,9 +11,6 @@ const Footer = () => {
         <a href=""></a>
       </div>
       <div className="flex justify-between w-[270px] h-[158px] items-center flex-col flex-wrap">
-        <div>
-        
-        </div>
         <NavLink to='/' >Главная</NavLink>
         <NavLink to='/' >О клинике</NavLink>
         <NavLink to='/' >Услуги</NavLink>
@@ -21,7 +18,7 @@ const Footer = () => {
         <NavLink to='/checkups' >Чек-апы</NavLink>
         <NavLink to='/doctors' >Врачи</NavLink>
         <NavLink to='/iv_therapy' >IV-терапия</NavLink>
-        <a href="client/src/app/components/ui/footer/footer">Запись онлайн</a>
+        <a href="#">Запись онлайн</a>
         <NavLink to='/contacts' >Контакты</NavLink>
       </div>
       <div>
