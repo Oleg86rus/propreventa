@@ -1,15 +1,15 @@
 import React from 'react';
 import { checkupsDescriptionConst } from '../../utils/constants';
-
+import { style } from '../../utils/constants';
 const CheckupsDescription = () => {
-  const listStyleClassName = 'list-disc mb-1';
+  const {title, listTitle, list} = checkupsDescriptionConst;
+  const {li, h1, p, ul} = style;
   return (
     <div className='container p-4'>
-      <h1 className=''>{checkupsDescriptionConst[0]}</h1>
-      <ul className='p-4'>
-        <li className={listStyleClassName}>{checkupsDescriptionConst[1]}</li>
-        <li className={listStyleClassName}>{checkupsDescriptionConst[2]}</li>
-        <li className={listStyleClassName}>{checkupsDescriptionConst[3]}</li>
+      <h1 className={h1}>{title}</h1>
+      <p className={p}>{listTitle}</p>
+      <ul className={ul}>
+        {list.map((el, i) => <li key={i} className={li}>{el}</li>)}
       </ul>
     </div>
   );

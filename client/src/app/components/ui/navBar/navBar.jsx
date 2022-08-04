@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { navList } from '../../../utils/constants';
 
 const Navbar = () => {
   return (
@@ -9,24 +10,9 @@ const Navbar = () => {
           <li className="">
             <NavLink exact className="mr-2" to="/">Главная</NavLink>
           </li>
-          <li className="">
-            <NavLink exact className="mr-2" to="/checkups">Чек-апы</NavLink>
-          </li>
-          <li className="">
-            <NavLink exact className="mr-2" to="/iv_therapy">IV-терапия</NavLink>
-          </li>
-          <li className="">
-            <NavLink exact className="mr-2" to="/analyzes">Анализы</NavLink>
-          </li>
-          <li className="">
-            <NavLink exact className="mr-2" to="/doctors">Врачи</NavLink>
-          </li>
-          <li className="">
-            <NavLink exact className="mr-2" to="/genetic_research">Генетические исследования</NavLink>
-          </li>
-          <li className="">
-            <NavLink exact className="" to="/about_us">О нас</NavLink>
-          </li>
+          {navList.map(el => <li key={el.id} className="">
+            <NavLink exact className="mr-2" to={el.href}>{el.name}</NavLink>
+          </li>)}
         </ul>
       </div>
     </nav>

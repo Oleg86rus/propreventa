@@ -1,15 +1,16 @@
 [
   {
     "id": 1,
-    "name": "",
+    "name": "Саакян Виктория Валерьевна",
     "skills": [
       "руководитель клиники",
       "врач антивозрастной превентивной медицины",
       "дерматолог - косметолог",
       "трихолог",
-      "нутрициилог"
+      "нутрициолог"
     ],
-    "photoUrl": ""
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "imageAlt": "Photo"
   },
   {
     "id": 2,
@@ -19,7 +20,8 @@
       "врач высшей категории",
       "стаж работы – 33 года"
     ],
-    "photoUrl": ""
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "imageAlt": "Photo"
   },
   {
     "id": 3,
@@ -28,7 +30,8 @@
       "медицинский психолог",
       "стаж работы – 19 лет"
     ],
-    "photoUrl": ""
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "imageAlt": "Photo"
   },
   {
     "id": 4,
@@ -36,7 +39,8 @@
     "skills": [
       "гастроэнтеролог"
     ],
-    "photoUrl": ""
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "imageAlt": "Photo"
   },
   {
     "id": 5,
@@ -44,6 +48,7 @@
     "skills": [
       "ревматолог"
     ],
-    "photoUrl": ""
+    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
+    "imageAlt": "Photo"
   }
 ]

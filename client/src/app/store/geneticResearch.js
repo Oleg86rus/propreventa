@@ -26,7 +26,6 @@ const geneticResearchSlice = createSlice({
 const {reducer: geneticResearchReducer, actions} = geneticResearchSlice;
 const {geneticResearchRequested, geneticResearchReceived, geneticResearchRequestedFailed} = actions;
 
-export const getGeneticResearch = () => state => state.checkups.entities;
 
 export const loadGeneticResearchList = () => async (dispatch) => {
   dispatch(geneticResearchRequested());
@@ -36,6 +35,15 @@ export const loadGeneticResearchList = () => async (dispatch) => {
   } catch (error) {
     dispatch(geneticResearchRequestedFailed(error.message));
   }
+};
+
+export const getGeneticResearch = () => state => state.geneticResearch.entities;
+
+export const getDroppersByIds = (droppersIds) => state => {
+  if (state.droppers.entities && droppersIds) {
+    return state.droppers.entities.find(el=>el._id === droppersIds);
+  }
+  return [];
 };
 
 export default geneticResearchReducer;

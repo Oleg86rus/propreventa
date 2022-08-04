@@ -26,7 +26,7 @@ const droppersSlice = createSlice({
 const {reducer: droppersReducer, actions} = droppersSlice;
 const {droppersRequested, droppersReceived, droppersRequestedFailed} = actions;
 
-export const getDroppers = () => state => state.checkups.entities;
+export const getDroppers = () => state => state.droppers.entities;
 
 export const loadDroppersList = () => async (dispatch) => {
   dispatch(droppersRequested());
@@ -36,6 +36,12 @@ export const loadDroppersList = () => async (dispatch) => {
   } catch (error) {
     dispatch(droppersRequestedFailed(error.message));
   }
+};
+export const getDroppersByIds = (droppersIds) => state => {
+  if (state.droppers.entities && droppersIds) {
+    return state.droppers.entities.find(el=>el._id === droppersIds);
+  }
+  return [];
 };
 
 export default droppersReducer;

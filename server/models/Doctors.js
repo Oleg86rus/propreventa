@@ -8,7 +8,10 @@ const schema = new Schema({
   skills: {
     type: Array,
   },
-  photoUrl: {
+  imageSrc: {
+    type: String,
+  },
+  imageAlt: {
     type: String,
   }
 }, {

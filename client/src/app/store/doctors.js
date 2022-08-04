@@ -26,7 +26,6 @@ const doctorsSlice = createSlice({
 const {reducer: doctorsReducer, actions} = doctorsSlice;
 const {doctorsRequested, doctorsReceived, doctorsRequestedFailed} = actions;
 
-export const getDoctors = () => state => state.checkups.entities;
 
 export const loadDoctorsList = () => async (dispatch) => {
   dispatch(doctorsRequested());
@@ -34,9 +33,17 @@ export const loadDoctorsList = () => async (dispatch) => {
     const { content } = await doctorsService.get();
     dispatch(doctorsReceived(content));
   } catch (error) {
-    console.log(error);
     dispatch(doctorsRequestedFailed(error.message));
   }
+};
+
+export const getDoctors = () => state => state.doctors.entities;
+
+export const getDoctorsByIds = (doctorsIds) => state => {
+  if (state.doctors.entities && doctorsIds) {
+    return state.doctors.entities.find(el=>el._id === doctorsIds);
+  }
+  return [];
 };
 
 export default doctorsReducer;
