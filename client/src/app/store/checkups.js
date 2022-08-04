@@ -30,7 +30,6 @@ export const loadCheckupsList = () => async (dispatch) => {
   dispatch(checkupsRequested());
   try {
     const { content } = await checkupsService.get();
-    console.log(content);
     dispatch(checkupsReceived(content));
   } catch (error) {
     dispatch(checkupsRequestedFailed(error.message));
@@ -38,5 +37,10 @@ export const loadCheckupsList = () => async (dispatch) => {
 };
 export const getCheckups = () => state => state.checkups.entities;
 export const getCheckupsLoadingStatus = () => state => state.checkups.isLoading;
-
+export const getCheckupsByIds = (checkupsIds) => state => {
+  if (state.checkups.entities && checkupsIds) {
+    return state.checkups.entities.find(el=>el._id === checkupsIds);
+  }
+  return [];
+};
 export default checkupsReducer;
