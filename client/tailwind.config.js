@@ -14,7 +14,22 @@ module.exports = {
         ]
       },
       colors: {
-        'mainMenu': '#BD7048'
+        'mainMenu': '#BD7048',
+        'footerBG': '#BC3A27'
+      },
+      keyframes: {
+        translate: {
+          '0%': { transform: 'translateY(0px)' },
+          '100%': { transform: 'translateY(-7px)' }
+        },
+        translateOff: {
+          '0%': { transform: 'translateY(-7px)' },
+          '100%': { transform: 'translateY(0px)' }
+        }
+      },
+      animation: {
+        'card-up': 'translate 0.3s forwards',
+        'card-down': 'translateOff 0.3s forwards'
       }
     },
   },

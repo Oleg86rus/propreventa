@@ -4,7 +4,7 @@ import { NavLink, useHistory } from 'react-router-dom';
 
 const ItemWithoutImage = ({product}) => {
   const { location } = useHistory();
-  const formClassName = 'flex flex-col justify-between items-center p-6 min-h-[310px] max-w-sm bg-white rounded-lg border border-amber-200 shadow-md hover:drop-shadow-xl transition-all duration-500';
+  const formClassName = 'flex flex-col justify-between items-center p-6 min-w-[220px] min-h-[335px] max-w-sm bg-white rounded-lg border border-amber-200 shadow-md hover:drop-shadow-xl hover:animate-card-up animate-card-down duration-300';
   const h3ClassName = 'mt-4 text-sm font-bold text-gray-700';
   const pClassName = 'mt-2 text-base  font-light text-gray-900';
   const priceClassName = 'mt-3 mb-2 text-lg  font-medium text-gray-900';

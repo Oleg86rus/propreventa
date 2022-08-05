@@ -2,6 +2,7 @@
   {
     "id": 1,
     "name": "Саакян Виктория Валерьевна",
+    "experience": 10,
     "skills": [
       "руководитель клиники",
       "врач антивозрастной превентивной медицины",
@@ -9,46 +10,65 @@
       "трихолог",
       "нутрициолог"
     ],
-    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
-    "imageAlt": "Photo"
+    "imageSrc": "https://downloader.disk.yandex.ru/preview/03ccee9a4cc90c1f54f771405fd7b71b60a7b0cb39b80acf8e7c7a92ad930030/62ed2e2a/6QytyuYjiRR9VxkUtTD9dSFN1-nxC47IcsS0mN9xvzABtRol2S2RukvhHKu53VaZkJ4Yga7Lx7eSfr9XdXIyWg%3D%3D?uid=0&filename=saakyan.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+    "imageAlt": "Photo",
+    "href": "https://med.ax/7s6UI"
   },
   {
     "id": 2,
     "name": "Петрова Людмила Владимировна",
+    "experience": 33,
     "skills": [
       "гинеколог–эндокринолог",
       "врач высшей категории",
       "стаж работы – 33 года"
     ],
-    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
-    "imageAlt": "Photo"
+    "imageSrc": "https://downloader.disk.yandex.ru/preview/a1ecf395ceba61c6f370e04ddac07f5abda8d8bd621b2e7ba3eef606918360f1/62ed2fcd/M78w98BCPB04plrzulkSvAhuMXPxx8FDp3k9ZkRmB78XeknMHY2wYOTYDs0Ef34PyQbXTWM4-8tFIBykX5JtCA%3D%3D?uid=0&filename=petrova.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+    "imageAlt": "Photo",
+    "href": "https://med.ax/7s6UI"
   },
   {
     "id": 3,
     "name": "Степанова Ирина Николаевна",
+    "experience": 19,
     "skills": [
-      "медицинский психолог",
-      "стаж работы – 19 лет"
+      "медицинский психолог"
     ],
-    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
-    "imageAlt": "Photo"
+    "imageSrc": "https://downloader.disk.yandex.ru/preview/ff83a744a6f48c03ce50d8393473fd41a7cf873ce44ad207a3a78e173f88d6bd/62ed2ff8/tYZe_d0n6L4Lx8msGiwOZtYji3U2cllKL-2acwgZbJ8IT9FhqsINnJ-pBUoUmg_kUznN9j4iimDSxDBPvFedXg%3D%3D?uid=0&filename=stepanova.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=2048x2048",
+    "imageAlt": "Photo",
+    "href": "https://med.ax/KpmR6"
   },
   {
     "id": 4,
-    "name": "Матыченко Инна Дмитриевна",
-    "skills": [
-      "гастроэнтеролог"
-    ],
-    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
-    "imageAlt": "Photo"
-  },
-  {
-    "id": 5,
-    "name": "Кузнецова Юлия Сергеевна",
+    "name": "Кузнецова Юлия Вячеславовна",
+    "experience": 24,
     "skills": [
       "ревматолог"
     ],
-    "imageSrc": "https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg",
-    "imageAlt": "Photo"
+    "imageSrc": "https://downloader.disk.yandex.ru/preview/31450bd5f7ccd191dedc99a68101c38cd0dec9c8ee82fa8bd8eefb400dcba954/62ed2f91/b7ZrSL3xUemBSUPQPDykv9Yji3U2cllKL-2acwgZbJ973kfCT1b97sWmvamJF4zve_4H3H9zIJdneYmTbFL1HA%3D%3D?uid=0&filename=kuznetsova.jpeg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+    "imageAlt": "Photo",
+    "href": "https://med.ax/2rVes"
+  },
+  {
+    "id": 5,
+    "name": "Буханевич Инна Александровна",
+    "experience": 27,
+    "skills": [
+      "гастроэнтеролог"
+    ],
+    "imageSrc": "https://downloader.disk.yandex.ru/preview/898c5c0686af4c80a438153c2e637ddd3f931364c983a16999e861e73d93f590/62ed2f64/L73aTy_Lvve8WvVw6S4CJfNlYhHbw9jZUVTiGyPc86eO3I7c0C1yOkVsATOHjCQU8z3NeOTg6ofgqrF2tCrHqQ%3D%3D?uid=0&filename=buhanevich.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+    "imageAlt": "Photo",
+    "href": "https://med.ax/4yVsw"
+  },
+  {
+    "id": 6,
+    "name": "Мартынюк Алексей Александрович",
+    "experience": 14,
+    "skills": [
+      "врач ультразвуковой диагностики"
+    ],
+    "imageSrc": "https://downloader.disk.yandex.ru/preview/a617c10a5c46e75c576cda7dd92e9e80c7ad7cb1f932f47441ec59b877bf856e/62ed2fb3/RHToi7QX9EpZfzh6Djkh0NYji3U2cllKL-2acwgZbJ-xBW8FLMTpw3LJA7tWKUIk2fHmAdF4QddLDrL_jS6aig%3D%3D?uid=0&filename=martinyk.JPG&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=0&tknv=v2&size=2048x2048",
+    "imageAlt": "Photo",
+    "href": "https://med.ax/DMS7f"
   }
 ]

@@ -17,10 +17,10 @@ const CheckupList = () => {
           <Navbar/>
           { checkupsId ? <Checkup/>
             :
-            (<>
+            (<div className='flex flex-col items-center'>
               <CheckupsDescription/>
               <CardList products={checkups}/>
-            </>)
+            </div>)
           }
         </div>}
     </>
