@@ -4,19 +4,22 @@ import './navbarMainpage.css';
 import { NavLink } from 'react-router-dom';
 import { navList } from '../../../utils/constants';
 
-const navLinkStyle = 'm-auto ml-0 text-center w-[150px]';
 const NavbarMainPage = () => {
+  const navLinkStyle = 'flex items-center justify-center h-full text-center';
+  
   return (
-    <div className='flex flex-wrap justify-center justify-items-stretch max-w-[1150px] container'>
-      <div className='flex items-center relative w-[343px] mr-20'>
+    <div className='container flex lg:flex-wrap sm:flex-wrap md:flex-wrap m-auto justify-center gap-4'>
+      <div className='flex items-center relative w-[343px]'>
         <p className='absolute top-0'>{company.date}</p>
-        <h1 className='text-center align-middle h-inherit font-extralight text-4xl tracking-wider text-right'>{company.description.toUpperCase()}</h1>
+        <h1 className='align-middle h-inherit font-extralight text-3xl tracking-wider text-right'>{company.description.toUpperCase()}</h1>
       </div>
-      <div className='grid grid-cols-3 gap-8 items-center p-2.5 max-w-[768px]'>
-        {navList.map(el => <div className='max-w-[220px] group text-center hover:drop-shadow-amber transition-all duration-500' key={el.id}>
-          <span className='navbarMainPage bg-mainMenu flex items-center border border-amber-600'>
-            <NavLink exact className={navLinkStyle} to={el.href}>{el.name}</NavLink>
-          </span>
+      <div className='grid sm:grid-cols-2 md:grid-cols-2 gap-4 lg:grid-cols-3 xl:grid-cols-3 items-center p-2.5'>
+        {navList.map(el => <div className='hover:drop-shadow-amber hover:animate-card-up animate-card-down' key={el.id}>
+          <div className='navbarMainPage bg-mainMenu flex items-center justify-center'>
+            <NavLink className={navLinkStyle} to={el.href}>
+              <p className='text-white'>{el.name}</p>
+            </NavLink>
+          </div>
         </div>)}
       </div>
     </div>

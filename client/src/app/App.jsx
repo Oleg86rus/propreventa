@@ -12,10 +12,11 @@ import Header from './components/ui/header/header';
 import Contacts from './pages/contacts';
 import AppLoader from './components/ui/hoc/appLoader';
 import Login from './pages/login';
+import LogOut from './components/common/logout';
 
 function App() {
   return (
-    <div className='container m-auto'>
+    <div className='m-auto'>
       <AppLoader>
         <Header/>
         <Switch>
@@ -28,6 +29,7 @@ function App() {
           <Route path='/geneticResearch/:geneticResearchId?/' component={GeneticResearchList} />
           <Route path='/IVTherapy/:IVTherapyId?/' component={IVTherapyesList} />
           <Route path='/contacts' component={Contacts} />
+          <Route path='/logout' component={LogOut}/>
           <Redirect to='/'/>
         </Switch>
         <Footer/>

@@ -13,6 +13,9 @@ const schema = new Schema({
   },
   imageAlt: {
     type: String,
+  },
+  href: {
+    type: String,
   }
 }, {
   timestamps: true

@@ -6,7 +6,7 @@ const ItemWithImage = ({product}) => {
   const {_id, href, imageSrc, imageAlt, name, price, skills} = product;
   return (
     <div className="group text-center">
-      <div className='flex flex-col justify-between items-center p-6 min-h-[310px] max-w-sm bg-white rounded-lg border border-amber-200 shadow-md hover:drop-shadow-xl transition-all duration-500'>
+      <div className='flex flex-col justify-between items-center p-6 h-[460px] min-w-[230px] max-w-sm bg-white rounded-lg border border-amber-400 shadow-md hover:drop-shadow-xl hover:scale-105 transition-all duration-500'>
         <div
           className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-[10px] overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <img

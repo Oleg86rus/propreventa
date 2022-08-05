@@ -14,7 +14,7 @@ const AnalyzesDescription = () => {
       </ul>
       <div className='flex justify-center p-4'>
         <button className={button}>
-          <a href={href}>Перейти на ДНКОМ</a>
+          <a href={href} target='_blank' >Перейти на ДНКОМ</a>
         </button>
       </div>
       
