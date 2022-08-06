@@ -13,6 +13,9 @@ module.exports = {
           '0 45px 65px rgba(0, 0, 0, 0.15)'
         ]
       },
+      boxShadow: {
+        'around': '60px 60px 60px -15px rgba(0, 0, 0, 0.3)'
+      },
       colors: {
         'mainMenu': '#BD7048',
         'footerBG': '#BC3A27'
@@ -30,6 +33,9 @@ module.exports = {
       animation: {
         'card-up': 'translate 0.3s forwards',
         'card-down': 'translateOff 0.3s forwards'
+      },
+      backgroundImage: {
+        'firm': 'url(\'/assets/firma.JPG\')',
       }
     },
   },

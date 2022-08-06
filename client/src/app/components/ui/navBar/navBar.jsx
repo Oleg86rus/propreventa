@@ -6,11 +6,11 @@ const Navbar = () => {
   return (
     <nav className="">
       <div className="">
-        <ul className="flex justify-between items-center h-[50px] px-5 shadow-md bg-gray-500 text-white">
-          <li className="">
+        <ul className="flex justify-between items-center h-[50px] px-5 shadow-lg text-amber-800">
+          <li className="hover:animate-card-up animate-card-down">
             <NavLink exact className="mr-2" to="/">Главная</NavLink>
           </li>
-          {navList.map(el => <li key={el.id} className="">
+          {navList.map(el => <li key={el.id} className="hover:animate-card-up animate-card-down">
             <NavLink exact className="mr-2" to={el.href}>{el.name}</NavLink>
           </li>)}
         </ul>

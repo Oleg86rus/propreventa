@@ -1,14 +1,14 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import checkupsReducer from './checkups';
 import doctorsReducer from './doctors';
-import droppersReducer from './droppers';
 import geneticResearchReducer from './geneticResearch';
 import usersReducer from './users';
+import IVTherapyesReducer from './IVTherapyes';
 
 const rootReducer = combineReducers({
   checkups: checkupsReducer,
   doctors: doctorsReducer,
-  droppers: droppersReducer,
+  IVTherapyes: IVTherapyesReducer,
   geneticResearch: geneticResearchReducer,
   users: usersReducer
 });

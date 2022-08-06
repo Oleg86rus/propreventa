@@ -67,7 +67,7 @@ export const navList = [
   {
     id: 4,
     name: 'IV-терапия',
-    href: '/IVTherapyesList'
+    href: '/IVTherapy'
   },
   {
     id: 5,

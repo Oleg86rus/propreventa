@@ -6,7 +6,9 @@ import {
   loadCheckupsList,
 } from '../../../store/checkups';
 import { loadDoctorsList } from '../../../store/doctors';
-import { loadDroppersList } from '../../../store/droppers';
+import {
+  loadIVTherapyesList
+} from '../../../store/IVTherapyes';
 import { loadGeneticResearchList } from '../../../store/geneticResearch';
 
 const AppLoader = ({children}) => {
@@ -15,7 +17,7 @@ const AppLoader = ({children}) => {
   useEffect(() => {
     dispatch(loadCheckupsList());
     dispatch(loadDoctorsList());
-    dispatch(loadDroppersList());
+    dispatch(loadIVTherapyesList());
     dispatch(loadGeneticResearchList());
   }, []);
   if (isLoading) return 'Loading...';
