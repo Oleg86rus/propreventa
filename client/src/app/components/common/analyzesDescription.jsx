@@ -18,7 +18,6 @@ const AnalyzesDescription = () => {
           <a href={href} target='_blank' >Перейти на ДНКОМ</a>
         </button>
       </div>
-      
     </div>
   );
 };

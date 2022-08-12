@@ -6,6 +6,7 @@ import localStorageService from '../service/localStorage.service';
 import { generateAuthError } from '../utils/generateAuthError';
 import { useHistory } from 'react-router-dom';
 
+
 const initialState = localStorageService.getAccessToken() ? {
   entities: null,
   isLoading: true,
@@ -117,14 +118,12 @@ export const login = ({ payload }) => async (dispatch) => {
     } else {
       dispatch(authRequestFailed(error.message));
     }
-    
   }
 };
 
 export const logOut = () => (dispatch) => {
   localStorageService.removeAuthData();
   dispatch(userLoggedOut());
-  history.push('/');
 };
 
 export const sighUp = (payload) => async (dispatch) => {

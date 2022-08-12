@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  checkupsDescriptionConst,
   IVTherapyesDescriptionConst,
 } from '../../utils/constants';
 import { style } from '../../utils/constants';

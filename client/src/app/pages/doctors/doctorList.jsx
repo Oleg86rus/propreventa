@@ -12,7 +12,6 @@ const DoctorList = () => {
   const {pathname} = location;
   const pathNames = pathname.split('/').filter((el) => el);
   const { doctorId } = useParams();
-  console.log(pathNames);
   return (
     <>
       <Navbar/>

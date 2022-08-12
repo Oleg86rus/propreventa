@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { validator } from '../../../utils/validator';
 import { sighUp } from '../../../store/users';
 import TextField from '../../common/form/textField';
 import RadioField from '../../common/form/radioField';
 import CheckboxField from '../../common/form/checkboxField';
-import { NavLink } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 
 const RegisterForm = () => {
+  const history = useHistory();
   const dispatch = useDispatch();
   
   const [data, setData] = useState({
