@@ -4,7 +4,8 @@ const schema = new Schema({
   name: {type: String},
   email: {type: String, required: true, unique: true},
   password: {type: String},
-  sex: {type: String, enum: ['male', 'female', 'other']}
+  sex: {type: String, enum: ['male', 'female', 'other']},
+  favourites: {type: Array}
 }, {
   timestamps: true
 });

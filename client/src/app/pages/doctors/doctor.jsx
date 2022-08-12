@@ -1,17 +1,19 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { getDoctorsByIds } from '../../store/doctors';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { style } from '../../utils/constants';
+import BackButton from '../../components/common/backButton';
 
 const DoctorList = () => {
   const {doctorId} = useParams();
   const { name, imageSrc, imageAlt, skills, href } = useSelector(getDoctorsByIds(doctorId));
   const {ul, li, h1, p} = style;
-  console.log(href);
   return (
-    <div className='container flex justify-center mt-10'> {skills &&
-      <div className='max-w-lg flex flex-col items-center gap-2'>
+    <div className='relative container flex justify-center mt-10 mb-10'>
+      <BackButton/>
+      {skills &&
+      <div className=' pt-16 max-w-lg flex flex-col items-center gap-2'>
         <div
           className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-[10px] overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
           <img

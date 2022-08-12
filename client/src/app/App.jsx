@@ -13,22 +13,33 @@ import Contacts from './pages/contacts';
 import AppLoader from './components/ui/hoc/appLoader';
 import Login from './pages/login';
 import LogOut from './components/common/logout';
+import UltrasoundsList from './pages/ultrasounds';
+import Favourites from './pages/favourites';
+import ProtectedRoute from './components/common/protectedRoute';
+import User from './pages/user/user';
 
 function App() {
   return (
-    <div className='m-auto'>
+    <div>
       <AppLoader>
         <Header/>
         <Switch>
+          <ProtectedRoute
+            path="/user/:userId?/:edit?"
+            component={User}
+          />
           <Route path='/' exact component={MainPage}/>
           <Route path='/login' exact component={Login}/>
           <Route path='/aboutUs' component={AboutUs} />
           <Route path='/analyzes' component={AnalyzesList} />
-          <Route path='/doctors/:doctorId?/' component={DoctorList} />
+          <Route path='/IVTherapy/:IVTherapyId?/' component={IVTherapyesList} />
+          <Route path='/doctors/:doctorId?/'  component={DoctorList} />
           <Route path='/checkups/:checkupsId?/' component={CheckupList} />
           <Route path='/geneticResearch/:geneticResearchId?/' component={GeneticResearchList} />
-          <Route path='/IVTherapy/:IVTherapyId?/' component={IVTherapyesList} />
+          <Route path='/ultrasounds/:ultrasoundId?/' component={UltrasoundsList} />
           <Route path='/contacts' component={Contacts} />
+          <Route path='/favourites' component={Favourites} />
+          <Route path='/user/:userId?/:edit?' component={User}/>
           <Route path='/logout' component={LogOut}/>
           <Redirect to='/'/>
         </Switch>

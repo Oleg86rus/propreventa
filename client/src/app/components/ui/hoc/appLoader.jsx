@@ -6,8 +6,13 @@ import {
   loadCheckupsList,
 } from '../../../store/checkups';
 import { loadDoctorsList } from '../../../store/doctors';
-import { loadDroppersList } from '../../../store/droppers';
+import {
+  loadIVTherapyesList
+} from '../../../store/IVTherapyes';
 import { loadGeneticResearchList } from '../../../store/geneticResearch';
+import { loadUsersList } from '../../../store/users';
+import { loadUltrasoundsList } from '../../../store/ultrasounds';
+import Loader from '../loader';
 
 const AppLoader = ({children}) => {
   const dispatch = useDispatch();
@@ -15,10 +20,12 @@ const AppLoader = ({children}) => {
   useEffect(() => {
     dispatch(loadCheckupsList());
     dispatch(loadDoctorsList());
-    dispatch(loadDroppersList());
+    dispatch(loadIVTherapyesList());
     dispatch(loadGeneticResearchList());
+    dispatch(loadUsersList());
+    dispatch(loadUltrasoundsList());
   }, []);
-  if (isLoading) return 'Loading...';
+  if (isLoading) return <Loader/>;
   return children;
 };
 AppLoader.propTypes = {
