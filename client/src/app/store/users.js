@@ -2,8 +2,9 @@ import { createAction, createSlice } from '@reduxjs/toolkit';
 import userService from '../service/user.service';
 import authService from '../service/auth.service';
 import localStorageService from '../service/localStorage.service';
-import history from '../utils/history';
+// import history from '../utils/history';
 import { generateAuthError } from '../utils/generateAuthError';
+import { useHistory } from 'react-router-dom';
 
 const initialState = localStorageService.getAccessToken() ? {
   entities: null,
@@ -11,14 +12,14 @@ const initialState = localStorageService.getAccessToken() ? {
   error: null,
   auth: { userId: localStorageService.getUserId() },
   isLoggedIn: true,
-  dataLoaded: false
+  dataLoaded: false,
 } : {
   entities: null,
   isLoading: false,
   error: null,
   auth: null,
   isLoggedIn: false,
-  dataLoaded: false
+  dataLoaded: false,
 };
 
 const usersSlice = createSlice({
@@ -61,7 +62,14 @@ const usersSlice = createSlice({
     },
     authRequested: (state) => {
       state.error = null;
-    }
+    },
+    addFavourite: (state, action) => {
+      state.entities[state.entities.findIndex(u=>u._id===action.payload._id)].favourites = action.payload.favourites;
+    },
+    // removeFavourite: (state, action) => {
+    //   state.favourites = state.favourites.filter(f => f !== action.payload);
+    //   localStorage.setItem('FavouriteDoctors', JSON.stringify(state.favourites));
+    // }
     
   }
 });
@@ -74,21 +82,33 @@ const {
   authRequestSuccess,
   authRequestFailed,
   userLoggedOut,
-  userUpdate
+  userUpdate,
+  addFavourite,
+  removeFavourite
 } = actions;
 
 const authRequested = createAction('users/authRequested');
 const userUpdateRequested = createAction('users/userUpdateRequested');
 const userUpdateFailed = createAction('users/userUpdateFailed');
+// const addToFavourites = createAction('users/addToFavourites');
 
-export const login = ({ payload, redirect }) => async (dispatch) => {
+export const addToFavourite = (payload) => async (dispatch) => {
+  // dispatch(addToFavourites());
+  try {
+    const { content } = await userService.update(payload);
+    dispatch(addFavourite(content));
+  } catch (e) {
+    console.log(e.message);
+  }
+};
+
+export const login = ({ payload }) => async (dispatch) => {
   const {email, password} = payload;
   dispatch(authRequested());
   try {
     const data = await authService.login({email, password});
     localStorageService.setTokens(data);
     dispatch(authRequestSuccess({ userId: data.userId }));
-    history.push(redirect);
   } catch (error) {
     const {code, message} = error.response.data.error;
     if (code === 400) {
@@ -113,7 +133,7 @@ export const sighUp = (payload) => async (dispatch) => {
     const data = await authService.register(payload);
     localStorageService.setTokens(data);
     dispatch(authRequestSuccess({ userId: data.userId }));
-    history.push('/users');
+    history.push('/');
   } catch (error) {
     dispatch(authRequestFailed(error.message));
   }
@@ -123,7 +143,7 @@ export const loadUsersList = () => async (dispatch) => {
   dispatch(usersRequested());
   try {
     const { content } = await userService.get();
-    dispatch(usersReceved(content));
+    dispatch(usersReceived(content));
   } catch (error) {
     dispatch(usersRequestFailed(error.message));
   }
@@ -147,7 +167,7 @@ export const getCurrentUserData = () => state => {
 export const getUserById = (userId) => state => {
   if (state.users.entities) return state.users.entities.find(u => u._id === userId);
 };
-
+export const getState = () => state => state;
 export const getIsLoggedIn = () => state => state.users.isLoggedIn;
 export const getDataStatus = () => state => state.users.dataLoaded;
 export const getUsersLoadingStatus = () => state => state.users.isLoading;

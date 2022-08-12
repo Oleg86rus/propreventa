@@ -3,7 +3,10 @@
     "id": 1,
     "name": "Экспресс-капельница DETOX",
     "price": 3200,
-    "description": "Выводит токсины и шлаки, ускоряет все обменные процессы в клетках организма, устраняет вялость, повышает энергию, улучшает внешний вид. В состав входят активные действующие вещества, которые поступают прямо в кровоток, быстро и без проблем усваиваются и способствуют физиологической детоксификации организма.",
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABnD2lpPS8UZ3PGIltsIrgTnGH94G-Xd2J_GVQn7311y0u-pLAMsKO7qyvYmSJq8BxvVhtynifzJWlACRGSDCxG2g90ANLAjNR0FkbZNemPF01GJHTViqysr8MFa3Pnc8Ybjv004q0SXr5cRbMDDyTiViv6YxoDR66Wbi3x2gfw8I7dg8chhUCe575ilJ3ytZV_rqI0kpZ5ZXE3R3i5Pq_UKYptY1G9SFhLPFKWLTwfWwyN1iKVdKGio0axLRXasn65v7MLZnu-zJKn1kuDM4xwiNUMx3Xl-1zEa6POfgovWZyCj0rnIX4o4MC9r8cLAssFSM19cp5eb-THoONa2O5X2ox8sFofur03RY_GpK_8Ze2fnhtK9JmAYrwK0wEJQF1s/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "Детокс капельница для быстрой перезагрузки организма",
+    "about": "Активные вещества поступают прямо в кровоток, быстро и без проблем усваиваются и способствуют физиологической детоксификации организма.",
     "composition": [
       "глутатион",
       "витамины группы B",
@@ -16,71 +19,148 @@
       "проходит усталость",
       "появляется энергия",
       "гармонизируется нервная система",
+      "снимает интоксикацию",
       "помогает быстро прийти в себя после вечеринки"
     ],
-    "text": "Даже одна капельница оказывает мощный положительный эффект на состояние организма. Стабильный и выраженный результат наблюдается после курса капельниц. 5  сеансов внутривенной терапии равны 3 месяцам приема БАД. Особенно внутривенная терапия рекомендована пациентам с проблемами ЖКТ. ",
-    "info": [
-      "в составах используются только зарегистрированные в РФ лекарственные средства",
-      "процедуру проводят опытные медсестра",
-      "длительность: 1,5 часа",
-      "курс: 5 капельниц",
-      "эксперсс-детокс: 1 капельница"
-    ]
+    "curs": "Курс 5-10 капельниц.",
+    "text": "Даже одна капельница оказывает мощный положительный эффект на состояние организма. Стабильный и выраженный результат наблюдается после курса капельниц. 5  сеансов внутривенной терапии равны 3 месяцам приема БАД."
   },
   {
     "id": 2,
     "name": "Капельница ЭНЕРГИЯ",
-    "price": 3200,
-    "description": "Повышает уровень энергии в организме, улучшает работу нервных клеток, улучшает работу митохондрий.",
+    "price": 3300,
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABm8je6ffhS2ozer4LJroM8ecJhJrUF1veBkLLhgTmmMFOGOmeuKUgC7llcJ4afAS-g6i_yvCZqGRndCwqZ0x6BXiZjRrbOm9OCiRFBIfHUEplqLOXzgk6lBQRhl-tyEmNd8OqYlg-vvjsiGPWnL__9IgEDH-_qQybetjDQGHffN87kqxPnnKfGWPNu4_20_UvGHyDNGd-COfiVgIjW_xW8b1bSgC5r-TmeUD72lr7f8T_P8z7DlVEJOll9sgZ4aFq1nRyK9wESaR9yGZ4ZDI9q-e7QP4HfNQrAAIekPG0ztwI9l6kfNK3BVAItHLpVJWM4iypNg9YmvZ_4G7M6gLTFVYbFbYwYyr5gZ_SxB9rU57peDhId5_tTWfwSbXIsd5iI/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "IV-нутритивная поддержка при физических нагрузках",
+    "about": "Активирует работу митохондрий и противодействует потери энергии. Повышает выносливость и устойчивость к физическим нагрузкам, пробуждает внутренние ресурсы организма. Быстро восстанавливает после длительных физических нагрузок. Идеальное решение для тех, кто чувствует себя уставшим после работы и не может уделить время другим делам. Снижает плохой холестерин, регулирует уровень сахара в крови.",
     "composition": [
-
+      "L-карнитин",
+      "альфа-липоевая кислота",
+      "коэнзим q10"
     ],
     "result": [
-
+      "заряд энергии и тонуса",
+      "ускоренное восстановление организма",
+      "бодрость и отличное настроение",
+      "увеличение работоспособности",
+      "профилактика атеросклероза"
     ],
-    "text": "",
-    "info": []
+    "curs": "Курс 5-10 капельниц.",
+    "text": "Даже одна капельница оказывает мощный положительный эффект на состояние организма. Стабильный и выраженный результат наблюдается после курса капельниц. 5  сеансов внутривенной терапии равны 3 месяцам приема БАД."
   },
   {
     "id": 3,
     "name": "Капельница ЖЕЛЕЗО",
-    "price": 3200,
-    "description": "Восполняет дефицит железа в организме.",
+    "price": 3300,
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABmcNNujqhOm2wYZsKNZE6u079kY68wqQ028AiiRbHxEI-R9or3yxoRa0yniMDnoNDJc4nQEOPI3v26_XIoaauTMUfRgl-5e8se-JOSoytlNvi42ibg9Lk1U1OxjXrSz49atK7sU5dkzKpcVhPJrEaTZCVyn6CiHaXpZ1-ciK9AUajTD9kMPtSiVhofe1opVkYrzx1TIZkDvdcTM0YA8FC0n5hjyOoQ6i9KFkuLsaIMrqzNX3akcph2eB5huJXHFiI8e4GTSZcUIX8iH2X49bWxJP5utSaA1TteNkwBO8Edfz8fTwGVli7_Xj1cG5KKHWi3mnxVCKB7NgheMbpDwq7en2DOVvsreuPm_Z5lIUJ7IKkFQOBswiUriZMx_eSggM7M/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "Для восполнения дефицита железа в организме",
+    "about": "Компоненты капельницы подобраны так, чтобы усилить усвоение железа, быстро, легко и безопасно восполнить нехватку железа организмом. Внутривенный путь введения железа во многих случаях оказывается гораздо более эффективным, чем пероральный приём, поскольку обеспечивает возможность более быстрого насыщения организма железом. Внутривенное введение железа позволяет преодолеть блокировку всасывания железа из желудочно-кишечного тракта и создать в организме запасы железа.",
     "composition": [
-
-     ],
-    "result": [
-
+      "Подбирается индивидуально по результатам анализов"
     ],
-    "text": "",
-    "info": []
+    "result": [
+      "восполнение дефицита железа в организме",
+      "прилив сил",
+      "устранение симптом хронической усталости",
+      "насыщение крови кислородом"
+    ],
+    "curs": "Назначается индивидуально врачом",
+    "text": ""
   },
   {
     "id": 4,
     "name": "Капельница  КРАСИВАЯ КОЖА",
     "price": 6000,
-    "description": "Омолаживает, питает, улучшает качества кожи.",
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABlT80OSV8YqyHBYs0M1hADYY2txFBjLLZmJV0nzQQ_FJl7nXWsvWShU7d-j1z14bMNiLlaXJIwFWH-Eyjs-k6KghNdNLKt1wd3u-6B8PqaR-lIl0FS8xl8_vDMzIXxIgsGSvX1wyHQ7rpqY_5Rlo2Fa5DG_JxCxDDulOnt_PWQXqZlP2_a4qXRubbhyKIGmHpuqKas-EnQawEG3rxWZZY6D-18uwBlwF_Y4_cCaBnDMuUaqxDiLSkcb6nWcMJ_tGKzEcIlvTgacvYW2M9hfsSwW22FFl_C9R7gZJwqv_aImK9kgffX8idd7Aeh3k91pS2AsSqoVWrd7bB-wJQ4n2P6uzh8XorM9cIAPiuTyly5RVg6Lhf5BP4ehCmpVjgrNSrE/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "Омоложение, питание, улучшение качества кожи",
+    "about": "Питает кожу изнутри, насыщает организм незаменимыми жирными кислотами, здоровый источник энергии. Идеальна при подготовке к беременности.",
     "composition": [
-
+      "Омега-3",
+      "триглицериды среднецепочечные",
+      "масло оливковое",
+      "другие компоненты"
     ],
     "result": [
-
+      "смягчает и питает кожу",
+      "профилактика сердечнососудистых заболеваний",
+      "улучшает память",
+      "восстанавливает слизистые"
     ],
-    "text": "",
-    "info": []
+    "curs": "Курс 5 капельниц.",
+    "text": ""
   },
   {
     "id": 5,
     "name": "Капельница  ВИТАМИННАЯ",
-    "price": 3200,
-    "description": "Насыщает организм витаминами.",
+    "price": 3300,
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABl0cUZGhPclWBGZcoiSlEIjc91tT4dfs8yARLotqZM7GovCNlUMG_XrAHv-qUG2WNNvwnF4O1P9NdX_oX5P479c1BwqjdGKzLMry_KEEEao5qN6V3kwxFEpwpkxYbDd8R6crSlIo-xL_Rjb1W2IjgtTTGLPLsANkjjnnZeYT1kv1jsu58Ri-PLpzbNcfhtMs7YUQ2sWXHjM8SxIu_wMCR_3mvn0ZkOsQYBqq2C5iLCr-AhQAtsd48TD2TUWK3IybPBE4Nu7ehGNQsGmEmIMHnWhVh4TAf_z8gwAX1tW9K5GmOa-ol9YPfA2UV304H30oxVGg6Hwh5HzJWexnSOSGF-rXNOpNUlobQfYeAk_Uu5Fqxq-H76iZCsg3gr2WoVRFcw/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "Поддержка организма витаминным комплексом",
+    "about": "Состав капельницы содержит комплекс ценных витаминов, которые быстро и эффективно устраняют дисбалансы, восстанавливают организм, наполняют силой и энергией.",
     "composition": [
-
+      "витамины А,Е,С",
+      "витамины группы B",
+      "витамин D3",
+      "другие витамины"
     ],
     "result": [
-
+      "общее укрепление и восстановление организма",
+      "оздоровление",
+      "укрепление иммунитета",
+      "активация умственной деятельности",
+      "устранение синдрома хронической усталости"
     ],
-    "text": "",
-    "info": []
+    "curs": "Курс 5 капельниц.",
+    "text": ""
+  },
+  {
+    "id": 6,
+    "name": "Капельница  ЗОЛУШКА",
+    "price": 4500,
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABnIjup1pbunQenB4-9ZLOabXzcH9plccIuVpbydQfuiNPsv4RpeI7HfvfIRDb5XlNwuVtjRkeMFnujD8vSQj0W9T5MLOfQIVm1RYHqTYdD2XDh4wmT_sEbDZaIzy0Y1_K4anWqKXCBD3wDT6dr1aykKfCNDT7xD_KMG-Y_vR9hDWvtZdbJjUC9ZqwGfQHRvshRewj-xxvhMO7gG5-EPSOFCMP8qZ422NB_AvejEbSH5C637DmcIqaa1S2mhFNZODZdKBkWE83WKjp40f-t2gVTXhn0RRpLfgZIgfEdrUOAluVhg_k_lWSqlTsPLpQWRehcbeL1feriFig6b6qw1_GQOXLZlFcqZrnaGEhMD97YGptYlAnfOlALchcTdTWtyldY/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "Beauty-капельница с глутатионом для красоты и здоровья",
+    "about": "Коктейль для внутривенного введения, состоящий из 3х мощных антиоксидантов – альфа-липоевой кислоты, глутатиона и витамина С",
+    "composition": [
+      "глутатион",
+      "альфа-липоевая кислота",
+      "витамин С"
+    ],
+    "result": [
+      "улучшает качество кожи",
+      "мощная профилактика пигментации",
+      "убирает отеки",
+      "очищает клеток печени",
+      "улучшает метаболизм, нормализует обмен липидов, холестерина, углеводного обмена",
+      "общий оздоравливающий эффект – снижение утомляемости, ощущение легкости, укрепление иммунитета, защита от простуд и заболеваний."
+    ],
+    "curs": "Курс 5 капельниц.",
+    "text": ""
+  },
+  {
+    "id": 7,
+    "name": "Капельница  ВИТАМИНН0-МИНЕРАЛЬНАЯ",
+    "price": 4200,
+    "imageSrc": "https://previews.dropbox.com/p/thumb/ABmfxeIQWFdOXHWUbn7fOlkjZdHla3GuX9F1KLjQNBAt1ym0f8bkUatVCCyJrk39i1VaqVxY-i167lUJfwSt03yDDT-Xc-Z7S4HxvUHy-mCZ1DLxFNxz6_4nWh7EoQsAwtf73AJ4treZ8KwTx2giUuZKFiFfkkh7oW9bFgDN5vLR6vq7zSOCimymQe-rCHj4G5NLek_8LNNxhKbgPXLoWB7UD3kjwmTqPF4txlSEC362h9XjBuM1doB-5ESBL6KtLu9Cld7woNu1rZkNgztMLqQptas2atGyHxUdCojBbK36eysYpawYArCeALATqYB7KWSMYXuuiYoNAZLfcLAzQWM0oqi4FMdvSBYKL_Lf3kK98xprZ7szsNS0MBfnTEoCDDQ/p.jpeg",
+    "imageAlt": "Photo",
+    "description": "Для устранения витаминно-минерального дисбаланса",
+    "about": "Сбалансированный комплекс ценных витаминов, которые быстро и эффективно устраняют дисбалансы, восстанавливают организм, наполняют силой и энергией. Обеспечивает полноценное снабжение организма витаминами.",
+    "composition": [
+      "витамины А,Е,С",
+      "витамины группы B",
+      "витамин D3",
+      "минеральный комплекс"
+    ],
+    "result": [
+      "общее укрепление и восстановление организма",
+      "оздоровление",
+      "укрепление иммунитета",
+      "активация умственной деятельности",
+      "устранение синдрома хронической усталости"
+    ],
+    "curs": "Курс 5 капельниц.",
+    "text": "Даже одна капельница оказывает мощный положительный эффект на состояние организма. Стабильный и выраженный результат наблюдается после курса капельниц. 5  сеансов внутривенной терапии равны 3 месяцам приема БАД."
   }
 ]

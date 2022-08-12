@@ -8,6 +8,7 @@ router.use('/checkups', require('./checkups.routes'));
 router.use('/geneticResearch', require('./geneticResearch.routes'));
 router.use('/user', require('./user.routes'));
 router.use('/ultrasounds', require('./ultrasounds.routes'));
+router.use('/services', require('./services.routes'));
 
 
 module.exports = router;

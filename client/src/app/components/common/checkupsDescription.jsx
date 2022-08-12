@@ -1,6 +1,7 @@
 import React from 'react';
 import { checkupsDescriptionConst } from '../../utils/constants';
 import { style } from '../../utils/constants';
+
 const CheckupsDescription = () => {
   const {title, listTitle, list} = checkupsDescriptionConst;
   const {li, h1, p, ul} = style;

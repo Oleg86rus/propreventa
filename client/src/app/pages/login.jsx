@@ -14,8 +14,8 @@ const Login = () => {
       : 'register');
   };
   return (
-    <div className="container mt-5">
-      <div className="min-h-full flex flex-col items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto mt-5 items-center">
+      <div className=" min-h-full flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8">
         {formType === 'register'
           ? (
             <>

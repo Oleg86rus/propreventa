@@ -6,13 +6,14 @@ import { useSelector } from 'react-redux';
 import { getCheckups } from '../../store/checkups';
 import { useParams } from 'react-router-dom';
 import Checkup from './checkup';
+import Loader from '../../components/ui/loader';
 
 const CheckupList = () => {
   const checkups = useSelector(getCheckups());
   const { checkupsId } = useParams();
   return (
     <>
-      {!checkups ? 'Loading' :
+      {!checkups ? <Loader/> :
         <div>
           <Navbar/>
           { checkupsId ? <Checkup/>

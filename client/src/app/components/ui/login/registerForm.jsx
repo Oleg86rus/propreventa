@@ -5,6 +5,7 @@ import { sighUp } from '../../../store/users';
 import TextField from '../../common/form/textField';
 import RadioField from '../../common/form/radioField';
 import CheckboxField from '../../common/form/checkboxField';
+import { NavLink } from 'react-router-dom';
 
 
 const RegisterForm = () => {
@@ -52,11 +53,6 @@ const RegisterForm = () => {
         value: 8
       }
     },
-    profession: {
-      isRequired: {
-        message: 'Обязательно выберете вашу профессию'
-      }
-    },
     licence: {
       isRequired: {
         message: 'Вы не можете использовать наш сервис без подтверждения лицензионного соглашения'
@@ -80,14 +76,18 @@ const RegisterForm = () => {
   }, [data]);
   
   const isValid = Object.keys(errors).length === 0;
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const isValid = validate();
     if (!isValid) return;
+    history.push('/');
     dispatch(sighUp(data));
   };
-  
+  const buttonValidate = () => {
+    if (isValid) return 'mt-4 w-full items-center px-4 py-2 border border-amber-500 rounded-lg shadow-sm text-sm font-medium text-black hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600 transition-all duration-500';
+    return 'mt-4 w-full items-center px-4 py-2 border border-amber-500 rounded-lg shadow-sm text-sm font-medium text-black focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600 transition-all duration-500 opacity-50';
+  };
   return (
     <form onSubmit={handleSubmit}>
       <TextField
@@ -128,7 +128,7 @@ const RegisterForm = () => {
         Подтвердить <a>лицензионное соглашение</a>
       </CheckboxField>
       <button
-        className="mt-4 w-full items-center px-4 py-2 border border-amber-500 rounded-lg shadow-sm text-sm font-medium text-black hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600 transition-all duration-500"
+        className={buttonValidate()}
         type="submit"
         disabled={!isValid}
       >

@@ -37,8 +37,40 @@ export const analyzesDescriptionConst = {
   href: 'https://dnkom.ru/surgut/analizy-i-tseny/po-tipu/'
 };
 
+export const ultrasoundsDescriptionConst = {
+  title: 'Ультразвуковая диагностика',
+  description: 'Метод УЗИ эффективен, безопасен и нагляден. Его можно применять неоднократно, кроме того, он не требует особенной подготовки пациента.',
+  propreventUzi: 'В клинике ProPreventa УЗИ проводится на новом, современном аппарате с высоким качеством изображения и современными датчиками, которые позволяют увидеть мельчайшие изменения внутри организма и получить точную информацию для  постановки диагноза.',
+};
+
+export const IVTherapyesDescriptionConst = {
+  title: 'IV-ТЕРАПИЯ',
+  droppersTitle: 'КАТАЛОГ КАПЕЛЬНИЦ',
+  description: 'Капельницы для детокса, энергии, насыщения организма витаминами и минералами, омоложения, лечения анемии.',
+  list: [
+    '100% усвоение организмом',
+    'Уникальные составы разработаны на основе международных научных исследований',
+    'В составах используются только, зарегистрированные в РФ лекарственные средства',
+    'Процедуры проводят опытные медработники',
+    'Особенно внутривенная терапия рекомендована пациентам с проблемами ЖКТ'
+  ]
+};
+export const geneticResearchDescriptionConst = {
+  title: 'Генетические исследования',
+  droppersTitle: 'КАТАЛОГ КАПЕЛЬНИЦ',
+  description: 'Капельницы для детокса, энергии, насыщения организма витаминами и минералами, омоложения, лечения анемии.',
+  list: [
+    '100% усвоение организмом',
+    'Уникальные составы разработаны на основе международных научных исследований',
+    'В составах используются только, зарегистрированные в РФ лекарственные средства',
+    'Процедуры проводят опытные медработники',
+    'Особенно внутривенная терапия рекомендована пациентам с проблемами ЖКТ'
+  ]
+};
+
 export const style = {
   h1: 'text-2xl font-bold text-center mt-4 mb-4 ',
+  h2: 'text-xl font-bold text-center mt-4 mb-4 ',
   p: 'mt-2 mb-2 text-sm font-normal text-gray-900 text-justify',
   p_Price: 'mt-1 text-lg font-medium text-gray-900',
   buttonInCard: 'inline-flex items-center px-4 py-2 border border-amber-500 rounded-[10px] shadow-sm text-sm font-medium text-black hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-all duration-500',
@@ -76,7 +108,7 @@ export const navList = [
   },
   {
     id: 6,
-    name: 'О нас',
-    href: '/aboutUs'
+    name: 'УЗИ',
+    href: '/ultrasounds'
   }
 ];

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAuthErrors, login } from '../../../store/users';
 import TextField from '../../common/form/textField';
@@ -44,8 +44,8 @@ const LoginForm = () => {
     e.preventDefault();
     const isValid = validate();
     if (!isValid) return;
-    const redirect = history.location.state ? history.location.state.from.pathname : '/';
-    dispatch(login({payload: data, redirect}));
+    history.push('/');
+    dispatch(login({payload: data}));
   };
   
   return (
@@ -69,7 +69,7 @@ const LoginForm = () => {
       />
       {loginError&&<p className='text-red-600 text-xs mt-1 mb-3'>{loginError}</p>}
       <button className="w-full items-center px-4 py-2 border border-amber-500 rounded-lg shadow-sm text-sm font-medium text-black hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600 transition-all duration-500"
-        disabled={!isValid}>Войти в личный кабинет
+        disabled={!isValid} type='submit'>Войти в личный кабинет
       </button>
     </form>
   );

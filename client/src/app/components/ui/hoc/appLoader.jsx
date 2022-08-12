@@ -10,6 +10,9 @@ import {
   loadIVTherapyesList
 } from '../../../store/IVTherapyes';
 import { loadGeneticResearchList } from '../../../store/geneticResearch';
+import { loadUsersList } from '../../../store/users';
+import { loadUltrasoundsList } from '../../../store/ultrasounds';
+import Loader from '../loader';
 
 const AppLoader = ({children}) => {
   const dispatch = useDispatch();
@@ -19,8 +22,10 @@ const AppLoader = ({children}) => {
     dispatch(loadDoctorsList());
     dispatch(loadIVTherapyesList());
     dispatch(loadGeneticResearchList());
+    dispatch(loadUsersList());
+    dispatch(loadUltrasoundsList());
   }, []);
-  if (isLoading) return 'Loading...';
+  if (isLoading) return <Loader/>;
   return children;
 };
 AppLoader.propTypes = {

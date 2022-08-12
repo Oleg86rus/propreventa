@@ -5,7 +5,6 @@ const droppersEndPoint = 'IVTherapy/';
 const IVTherapyesService = {
   get: async () => {
     const { data } = await httpService.get(droppersEndPoint);
-    console.log(data);
     return data;
   }
 };

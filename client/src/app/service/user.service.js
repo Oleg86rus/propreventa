@@ -1,7 +1,7 @@
 import httpService from './http.service';
 import localStorageService from './localStorage.service';
 
-const userEndPoint = 'user/';
+const userEndPoint = '/user/';
 
 const userService = {
   get: async () => {
@@ -20,7 +20,7 @@ const userService = {
   },
   update: async (payload) => {
     const { data } = await httpService.patch(
-      userEndPoint + localStorageService.getUserId(),
+      userEndPoint + payload.userId,
       payload
     );
     return data;

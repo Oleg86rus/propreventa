@@ -9,6 +9,12 @@ const schema = new Schema({
     type: Number,
     required: true
   },
+  imageSrc: {
+    type: String,
+  },
+  imageAlt: {
+    type: String,
+  },
   description: {
     type: String,
     required: true
@@ -22,12 +28,7 @@ const schema = new Schema({
     required: true
   },
   text: {
-    type: String,
-    required: true
-  },
-  info: {
-    type: Array,
-    required: true
+    type: String
   }
 }, {
   timestamps: true

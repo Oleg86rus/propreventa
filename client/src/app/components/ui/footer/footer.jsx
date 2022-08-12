@@ -2,6 +2,7 @@ import React from 'react';
 import { company } from '../../../utils/constants';
 import { Link, NavLink } from 'react-router-dom';
 import arrow from '../../../assets/arrowFooter.png';
+import ScrollToTop from '../../common/scrollToTop';
 
 const Footer = () => {
   return (
@@ -11,22 +12,17 @@ const Footer = () => {
           <Link to='/'>{company.name.toUpperCase()}</Link>
           <a href=""></a>
         </div>
-        <div className="flex justify-between w-[270px] h-[158px] items-center flex-col flex-wrap">
+        <div className="grid grid-cols-2 justify-between w-[300px] h-[200px] items-center flex-col flex-wrap">
           <NavLink to='/' >Главная</NavLink>
-          <NavLink to='/' >О клинике</NavLink>
-          <NavLink to='/' >Услуги</NavLink>
+          <NavLink to='/aboutUs' >О клинике</NavLink>
           <NavLink to='/analyzes' >Анализы</NavLink>
           <NavLink to='/checkups' >Чек-апы</NavLink>
           <NavLink to='/doctors' >Врачи</NavLink>
-          <NavLink to='/iv_therapy' >IV-терапия</NavLink>
-          <a href="#">Запись онлайн</a>
-          <NavLink to='/contacts' >Контакты</NavLink>
+          <NavLink to='/IVTherapy' >IV-терапия</NavLink>
         </div>
-        <div>
-          <img src={arrow} alt="arrow"/>
-        </div>
-        <div>
-          <button className='py-2 px-4 mr-2 rounded hover:shadow-md transition-all border-2 bg-none decoration-white'>Заказать звонок</button>
+        <div className='min-w-[50px] flex justify-between'>
+          <NavLink target='_blank' to={{pathname: 'https://www.instagram.com/propreventa/'}}><i className="fa fa-instagram" aria-hidden="true"></i></NavLink>
+          <NavLink target='_blank' to={{pathname: 'https://www.instagram.com/dnkom_surgut/'}}><i className="fa fa-instagram" aria-hidden="true"></i></NavLink>
         </div>
       </div>
     </div>
