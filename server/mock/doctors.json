@@ -10,7 +10,7 @@
       "трихолог",
       "нутрициолог"
     ],
-    "imageSrc": "https://localhost:8080/saakyan.jpg",
+    "imageSrc": "http://localhost:8080/doctors/saakyan.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/7s6UI"
   },
@@ -23,7 +23,7 @@
       "врач высшей категории",
       "стаж работы – 33 года"
     ],
-    "imageSrc": "https://localhost:8080/petrova.jpg",
+    "imageSrc": "http://localhost:8080/doctors/petrova.JPG",
     "imageAlt": "Photo",
     "href": "https://med.ax/7s6UI"
   },
@@ -34,7 +34,7 @@
     "skills": [
       "медицинский психолог"
     ],
-    "imageSrc": "https://localhost:8080/stepanova.jpg",
+    "imageSrc": "http://localhost:8080/doctors/stepanova.png",
     "imageAlt": "Photo",
     "href": "https://med.ax/KpmR6"
   },
@@ -45,7 +45,7 @@
     "skills": [
       "ревматолог"
     ],
-    "imageSrc": "https://localhost:8080/kuznetsova.jpg",
+    "imageSrc": "http://localhost:8080/doctors/kuznetsova.jpeg",
     "imageAlt": "Photo",
     "href": "https://med.ax/2rVes"
   },
@@ -56,7 +56,7 @@
     "skills": [
       "гастроэнтеролог"
     ],
-    "imageSrc": "https://localhost:8080/buhanevich.jpg",
+    "imageSrc": "http://localhost:8080/doctors/buhanevich.JPG",
     "imageAlt": "Photo",
     "href": "https://med.ax/4yVsw"
   },
@@ -67,7 +67,7 @@
     "skills": [
       "врач ультразвуковой диагностики"
     ],
-    "imageSrc": "https://localhost:8080/martinyk.jpg",
+    "imageSrc": "http://localhost:8080/doctors/martinyk.JPG",
     "imageAlt": "Photo",
     "href": "https://med.ax/DMS7f"
   }
