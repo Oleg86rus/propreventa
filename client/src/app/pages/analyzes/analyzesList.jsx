@@ -4,12 +4,12 @@ import AnalyzesDescription from '../../components/common/analyzesDescription';
 
 const AnalyzesList = () => {
   return (
-    <div className='min-h-[800px]'>
+    <>
       <Navbar/>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center min-h-[1000px]'>
         <AnalyzesDescription/>
       </div>
-    </div>
+    </>
   );
 };
 
