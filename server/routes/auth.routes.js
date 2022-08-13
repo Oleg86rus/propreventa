@@ -43,6 +43,7 @@ router.post('/signUp', [
       const hashedPassword = await bcrypt.hash(password, 12)
       const newUser = User.create({
         ...req.body,
+        admin: false,
         password: hashedPassword
       })
       

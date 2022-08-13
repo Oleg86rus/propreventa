@@ -17,6 +17,7 @@ import UltrasoundsList from './pages/ultrasounds';
 import Favourites from './pages/favourites';
 import ProtectedRoute from './components/common/protectedRoute';
 import User from './pages/user/user';
+import CreateCards from './pages/user/createCards';
 
 function App() {
   return (
@@ -38,11 +39,16 @@ function App() {
           <Route path='/favourites' component={Favourites} />
           <Route path='/user/:userId?/:edit?' component={User}/>
           <Route path='/logout' component={LogOut}/>
+          <ProtectedRoute path='/createCard' component={CreateCards}/>
           <Redirect to='/'/>
           <ProtectedRoute
             path="/user/:userId?/:edit?"
             component={User}
           />
+          {/*<ProtectedRoute*/}
+          {/*  path="/user/:userId?/createCard"*/}
+          {/*  component={CreateCards}*/}
+          {/*/>*/}
         </Switch>
         <Footer/>
       </AppLoader>

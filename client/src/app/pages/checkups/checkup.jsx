@@ -1,17 +1,26 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { getCheckupsByIds } from '../../store/checkups';
+import {
+  getCheckupsByIds
+} from '../../store/checkups';
 import { useParams } from 'react-router-dom';
 import { style } from '../../utils/constants';
 import BackButton from '../../components/common/backButton';
+import { getCurrentUserId, getUserById } from '../../store/users';
+import DeleteButton from '../../components/common/deleteButton';
 
 const Checkup = () => {
   const {checkupsId} = useParams();
+  const userId = useSelector(getCurrentUserId());
+  const user  = useSelector(getUserById(userId));
+  const auth = Object.keys(user).findIndex((el) => el === 'admin');
   const { div, name, composition, description, price } = useSelector(getCheckupsByIds(checkupsId));
   const {h1, h2, li, ul, p, p_Price} = style;
+
   return (
     <div className='container relative mt-10 mb-10'>
       <BackButton/>
+      {auth > 0 && <DeleteButton/>}
       <h1 className={`${h1} mb-5`}>{name}</h1>
       <div className='flex flex-col items-center relative'>
         <div className='absolute'>

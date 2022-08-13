@@ -10,7 +10,7 @@
       "трихолог",
       "нутрициолог"
     ],
-    "imageSrc": "https://previews.dropbox.com/p/thumb/ABlSE-5n2xdLX7XddpvxXtBlvUyNyiwIr0is3usmGzlFaWiP-8Yrj1G1Ntkr0hXuzJAC8E1AYZV30kCpsn4HparVlePBY_GCrQt68AhA64cNsbW175NzfokQ5AzFaG6Wb_eTwHlUvZCl9Av_1083H62OxldSl7-cGB21ymeLEP3Fd2U5UOxDCZCWq1bHy64_Qwe3G5zMNGX8KsF2Xhl1e95wdtw0z2_H6aUrL_ZHGg4euGyIi23GvtKguyWao7O70IBH0ZwUpN8rD9USG1R-HV2PmFmAIDS6gcW56W85Hkqo3O930gQ3ZbSakcq1JYvIXNVFf_VZjGJtR6RHaolRm2NoLZs-6tIOu-KhVb7QxhwJbeEa0Tn0z-Qt6Pzp4MDN4qruHIsmrtoz8C-1hNxHtA5QKjPrgNXcY1sNymscvpRVMUgJ-iOqn-EaKQMV1hAFH-46aGw86O70wwR9TsCz5jie0fx2tNTdOl5DqQATurqSCNlxRHvli1IxrdKwDqJFZ390KgzV3NYyXpoBFGaB4SFmGq27PhStD0XPU8AR81Wb3zS5iNouxC0Qis3k9aAD7n4/p.jpeg",
+    "imageSrc": "https://localhost:8080/saakyan.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/7s6UI"
   },
@@ -23,7 +23,7 @@
       "врач высшей категории",
       "стаж работы – 33 года"
     ],
-    "imageSrc": "https://previews.dropbox.com/p/thumb/ABmecOdxfsQiFjupxs9U0W3aIpBU6BDnwNaDaCxmhgXB0s78XnSCz_yVUuAu_i91vsU-4XndLUcim2NHuINvuhhhuZS8oQOI-LPp3_-4Z7iLfg_MiJHIVKWzGUBE-LQXSFEIiIlgQigIv_5Uhdq5MOpohNdxC1lDEJ8kR1dEjHfzIwxT-Q5_IkqSKaiY5BcvXsxt7uLhKUSP_biCRzB2xyo20PC4amKouZmLaFyyMiyzo0jgQcdoHF67T1kf3MH0xGi6Fmzc01EI4T6CesPKjm5HjG8GjFp-WUW--qdVKp2sQCK6RY0f0mI72sRuTTh0ByZ0NL8vj2z6zi9q1Ij5F38wdVSXiUcyEcHqd7yqQw-zfI-A2hHkzstYKclhFCjp-jE/p.jpeg",
+    "imageSrc": "https://localhost:8080/petrova.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/7s6UI"
   },
@@ -34,7 +34,7 @@
     "skills": [
       "медицинский психолог"
     ],
-    "imageSrc": "https://previews.dropbox.com/p/thumb/ABndWNuTtxB5Q4rKYAlfn_XJ9Q26mGfLgWO-ApX4UmbTb4hlLeYv3zkxSFXCm_jvXjBUAUFm13ahPxgcuFiFIpNt262ysBb6iZuPywsW38Km6HU8tmfapj4iBZQIyvkWZQ3UaXr8GW93sQcxKupcvPUpFIX6frQ9TJKP5kteTWuG2MgjXq69HwxNC3qSCaqOEnF-wt8S1CjXq9hC1l4VpIl8DPWP5ezN26reUFnxUh5WzjFqxEr5sfURqT8RX_U6XMZwnsQCYrWHmlJEA95vzuP-snJg1rro36ZkV53xomlu3LyYGI-njcweAulMgW4y3Jpv7YUPq2_-NWwfcOH6bs2tzrTchcCpEnT0yHGrV6GAy8m5rHldOWmUzwg7SNuYmIM/p.png",
+    "imageSrc": "https://localhost:8080/stepanova.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/KpmR6"
   },
@@ -45,7 +45,7 @@
     "skills": [
       "ревматолог"
     ],
-    "imageSrc": "https://previews.dropbox.com/p/thumb/ABmQbHOQ2vm63goHH8kYwIeoLJTLlqi0KD0DiZ0-3DrqlgCYfrCpbdr5Ze32wy7UHJfJklmO5Jt_mHYmT4g1ZyY3W0SbGYp0pmZ8Ekc_bz4gVPpADEfaGuZ5fZP3o-NuGFSqooVP1ZbBtUx1JqfdxwZw6FEAdJfhJBSvmTBSy_cbL-Iy2JkcczNuPaA5FMxNRbNklXEvkPfmA93lQycukshbofT1ZdSekgAR8hP9xutFO1UYluoCXUNc5g-21xlF7BYob57EHG-jQb4MfVYhjJ6QZq3UI3_CrhYe0qhiWLqdQaUEeTCY9fz70UW-YcYj_loAEBErkHib7Q_wPdPyYAHLLzQ_xq8fYb8JnVNw97bbDrHG-JNp3CdpYjIiWGrOlqY/p.jpeg",
+    "imageSrc": "https://localhost:8080/kuznetsova.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/2rVes"
   },
@@ -56,7 +56,7 @@
     "skills": [
       "гастроэнтеролог"
     ],
-    "imageSrc": "https://previews.dropbox.com/p/thumb/ABlc-Yd-JK8LKQNlsiFIR0sWXR3EcEiFzOAmz3h5WOqETXP4-3og-shn6SJ-M2xUaAWe4NYEJJ-0pPrDFnGamYJ3Hz1jKkyQLwrLld3hMxuv6k6IoOgyL3VtHdYL3Y7O2mFIESXpDNZ9GsAqSEt77wCTkGQA74NyWV_958N8AZJSVOZwZtfqwJ63dLBFMokJK8aSV-cqHSxTe7xqo-fpuU9yndZe6COg_BPwdahhD0S4ea89d6zooeH_dNZd08ALKGeA0QXDs0i3mbW3k-YxNH8eYKRBz4dEnlk7Kh78VDgeY7MT9A9t2evpfigHYn8KCAwlfU3r8TBoR8LJzdhVy1g3uXvK9yMfHN27T6Q5fNSxM_YAG28N_UtU_PUeTaLS_ad8lla-l9GIJHTgLxqq1hpDupJAKMtsFGp-gPt0G3kTJzkQUI3xXqPme7SwuSyVZ4k/p.jpeg",
+    "imageSrc": "https://localhost:8080/buhanevich.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/4yVsw"
   },
@@ -67,7 +67,7 @@
     "skills": [
       "врач ультразвуковой диагностики"
     ],
-    "imageSrc": "https://previews.dropbox.com/p/thumb/ABnYWRfNKMxrBkfb3PJcebc0-CVdgrHMQ6VbgWKcg7Dv2r0-ZjofCfUVUhP7EsDT7UYDSi69K2RO30uUGuhy01_RFNO4xM3EAE-lL2_F3n-fUhtL3WmS8rSotSdIf0I6-OHDXRj0xPTEGK7ZehdlECJD7r-lSFd2WqOYyxXObCuVMb19cW556P95v47U0dvXp-BjGi6aFU-DT-giCoMO7cXr5_IPelXAmI5Va1NDoknQd9GtOOMhasMW8SaXxnju753poC2e1CXvdlQ80X46CNMvCsx2Pbc8QZgFAod_tmsOn_v184cSrdvArTE2ilpu7TtL2s1DIQBsKmuEFUIU-0EThIkBYvlXrzmGewkqiTabLaOOvhzqJxeTLrqGqcRnMuxae4gOTD363CTf1Khi4Ey1buYtwY71LMC2wvxx2scJBS-JvO9h9vBEtqjTtU7J-Bg/p.jpeg",
+    "imageSrc": "https://localhost:8080/martinyk.jpg",
     "imageAlt": "Photo",
     "href": "https://med.ax/DMS7f"
   }

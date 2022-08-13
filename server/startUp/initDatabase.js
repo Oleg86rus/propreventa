@@ -3,11 +3,13 @@ const doctorsMock = require('../mock/doctors.json');
 const droppersMock = require('../mock/IVTherapyes.json');
 const geneticResearchMock = require('../mock/geneticResearch.json');
 const ultrasoundsMock = require('../mock/ultrasounds.json');
+const usersMock = require('../mock/users.json')
 const CheckUp = require('../models/Checkups');
 const Doctor = require('../models/Doctors');
 const Droppers = require('../models/IVTherapyes');
 const GeneticResearch = require('../models/GeneticResearch');
 const Ultrasounds = require('../models/Ultrasounds');
+const Users = require('../models/User')
 
 async function createInitialEntity(Model, data) {
   await Model.collection.drop()
@@ -49,5 +51,10 @@ module.exports = async () => {
   const ultrasounds = await Ultrasounds.find()
   if (ultrasounds.length !== ultrasoundsMock.length) {
     await createInitialEntity(Ultrasounds, ultrasoundsMock)
+  }
+  
+  const users = await Users.find()
+  if (users.length !== usersMock.length) {
+    await createInitialEntity(Users, usersMock)
   }
 }

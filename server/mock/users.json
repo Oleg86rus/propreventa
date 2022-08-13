@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "name": "Oleg",
+    "email": "o.pototskiy@yandex.ru",
+    "password": "$2a$12$PTxHticAew05eB3/YGPnxuSz9.kCNETON777gYN0xay2.y0pjffuO",
+    "sex": "male",
+    "favourites": [],
+    "admin": true
+  }
+]

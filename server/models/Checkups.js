@@ -15,7 +15,6 @@ const schema = new Schema({
   },
   composition: {
     type: Array,
-    required: true
   }
 }, {
   timestamps: true

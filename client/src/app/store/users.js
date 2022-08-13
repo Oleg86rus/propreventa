@@ -2,10 +2,7 @@ import { createAction, createSlice } from '@reduxjs/toolkit';
 import userService from '../service/user.service';
 import authService from '../service/auth.service';
 import localStorageService from '../service/localStorage.service';
-// import history from '../utils/history';
 import { generateAuthError } from '../utils/generateAuthError';
-import { useHistory } from 'react-router-dom';
-
 
 const initialState = localStorageService.getAccessToken() ? {
   entities: null,
@@ -130,6 +127,7 @@ export const sighUp = (payload) => async (dispatch) => {
   dispatch(authRequested());
   try {
     const data = await authService.register(payload);
+    console.log(data);
     localStorageService.setTokens(data);
     dispatch(authRequestSuccess({ userId: data.userId }));
     history.push('/');
@@ -159,17 +157,13 @@ export const updateUser = (payload) => async (dispatch) => {
   }
 };
 
-export const getUsersList = () => state => state.users.entities;
 export const getCurrentUserData = () => state => {
   return state.users.entities ? state.users.entities.find(u=>u._id === state.users.auth.userId) : null;
 };
 export const getUserById = (userId) => state => {
   if (state.users.entities) return state.users.entities.find(u => u._id === userId);
 };
-export const getState = () => state => state;
 export const getIsLoggedIn = () => state => state.users.isLoggedIn;
-export const getDataStatus = () => state => state.users.dataLoaded;
-export const getUsersLoadingStatus = () => state => state.users.isLoading;
 export const getCurrentUserId = () => state => state.users.auth.userId;
 export const getAuthErrors = () => state => state.users.error;
 export default usersReducer;
