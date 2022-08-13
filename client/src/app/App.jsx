@@ -26,7 +26,6 @@ function App() {
       <AppLoader>
         <Header/>
         <Switch>
-
           <Route path='/' exact component={MainPage}/>
           <Route path='/login' exact component={Login}/>
           <Route path='/aboutUs' component={AboutUs} />
@@ -46,10 +45,6 @@ function App() {
             path="/user/:userId?/:edit?"
             component={User}
           />
-          {/*<ProtectedRoute*/}
-          {/*  path="/user/:userId?/createCard"*/}
-          {/*  component={CreateCards}*/}
-          {/*/>*/}
         </Switch>
         <Footer/>
       </AppLoader>

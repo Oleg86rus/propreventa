@@ -36,7 +36,7 @@ router.post('/', async (req, res) => {
 router.delete("/:checkupId", async (req, res) => {
   try {
     const { checkupId } = req.params;
-    const removedCheckup = await Comment.findById(checkupId);
+    const removedCheckup = await Checkups.findById(checkupId);
     await removedCheckup.remove();
     res.send(null);
   } catch (e) {

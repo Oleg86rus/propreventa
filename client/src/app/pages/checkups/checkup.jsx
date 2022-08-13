@@ -18,7 +18,7 @@ const Checkup = () => {
   const {h1, h2, li, ul, p, p_Price} = style;
 
   return (
-    <div className='container relative mt-10 mb-10'>
+    <div className='container relative mt-10 mb-10 min-h-[1100px]'>
       <BackButton/>
       {auth > 0 && <DeleteButton/>}
       <h1 className={`${h1} mb-5`}>{name}</h1>

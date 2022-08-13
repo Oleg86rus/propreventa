@@ -3,7 +3,7 @@ import DarkTheme from '../ui/darkTheme';
 
 const ButtonForDarkTheme = () => {
   const {theme, setTheme} = DarkTheme();
-  const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(true);
   
   const handleDarkThemeClick = () => {
     if (theme === 'light') {
