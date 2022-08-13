@@ -12,7 +12,7 @@ const IVTherapy = () => {
   const {ul, li, h1, p} = style;
 
   return (
-    <div className='mx-auto container flex justify-center mt-10 mb-10'>
+    <div className='relative mx-auto container flex justify-center mt-10 mb-10'>
       <BackButton/>
       {name &&
       <div className='max-w-lg flex flex-col items-center gap-2'>
