@@ -10,7 +10,7 @@ const DoctorList = () => {
   const { name, imageSrc, imageAlt, skills, href } = useSelector(getDoctorsByIds(doctorId));
   const {ul, li, h1, p} = style;
   return (
-    <div className='relative container flex justify-center mt-10 mb-10'>
+    <div className='mx-auto relative container flex justify-center mt-10 mb-10'>
       <BackButton/>
       {skills &&
       <div className=' pt-16 max-w-lg flex flex-col items-center gap-2'>

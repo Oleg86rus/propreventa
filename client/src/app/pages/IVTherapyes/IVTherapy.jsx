@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import { getIVTherapyByIds, getIVTherapyes } from '../../store/IVTherapyes';
 import { useHistory, useParams } from 'react-router-dom';
 import { style } from '../../utils/constants';
+import BackButton from '../../components/common/backButton';
 
 const IVTherapy = () => {
   const {IVTherapyId} = useParams();
@@ -11,7 +12,8 @@ const IVTherapy = () => {
   const {ul, li, h1, p} = style;
 
   return (
-    <div className='container flex justify-center mt-10'>
+    <div className='mx-auto container flex justify-center mt-10 mb-10'>
+      <BackButton/>
       {name &&
       <div className='max-w-lg flex flex-col items-center gap-2'>
         <div
