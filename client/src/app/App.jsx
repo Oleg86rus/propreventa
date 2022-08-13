@@ -24,10 +24,7 @@ function App() {
       <AppLoader>
         <Header/>
         <Switch>
-          <ProtectedRoute
-            path="/user/:userId?/:edit?"
-            component={User}
-          />
+
           <Route path='/' exact component={MainPage}/>
           <Route path='/login' exact component={Login}/>
           <Route path='/aboutUs' component={AboutUs} />
@@ -42,6 +39,10 @@ function App() {
           <Route path='/user/:userId?/:edit?' component={User}/>
           <Route path='/logout' component={LogOut}/>
           <Redirect to='/'/>
+          <ProtectedRoute
+            path="/user/:userId?/:edit?"
+            component={User}
+          />
         </Switch>
         <Footer/>
       </AppLoader>
