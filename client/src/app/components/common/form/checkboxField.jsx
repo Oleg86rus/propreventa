@@ -8,6 +8,7 @@ const CheckboxField = ({ name, value, onChange, children, error }) => {
   const getInputClasses = () => {
     return 'h-4 w-4 text-amber-500 focus:ring-amber-500 border-amber-300';
   };
+  
   return (
     <>
       <div className="flex items-center">

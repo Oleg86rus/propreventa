@@ -11,6 +11,7 @@ const NavProfileMenu = () => {
     return classes.filter(Boolean).join(' ');
   }
   const auth = Object.keys(user).findIndex((el) => el === 'admin');
+  
   return (
     <>
       <Menu.Item>

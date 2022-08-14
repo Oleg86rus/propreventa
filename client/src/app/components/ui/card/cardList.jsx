@@ -12,6 +12,7 @@ const CardList = ({ products }) => {
       </div>
     </div>
   );
+  
   return <Loader/>;
 };
 

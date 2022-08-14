@@ -1,3 +1,5 @@
+//need to add on mainpage some info
+
 import React from 'react';
 
 const Info = () => {

@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
-const TextAreaField = ({ label, type, name, value, onChange, error }) => {
+const TextAreaField = ({ label, name, value, onChange, error }) => {
   const handleChange = ({ target }) => {
     onChange({name: target.name, value: target.value});
   };

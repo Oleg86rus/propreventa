@@ -6,9 +6,9 @@ import { getUltrasounds } from '../store/ultrasounds';
 import UltrasoundsDescription from '../components/common/ultrasoundsDescription';
 import Loader from '../components/ui/loader';
 
-
 const UltrasoundsList = () => {
   const ultrasounds = useSelector(getUltrasounds());
+  
   return (
     <>
       <Navbar/>

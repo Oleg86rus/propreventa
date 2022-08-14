@@ -3,12 +3,9 @@ import logo from '../../../assets/logo.png';
 import { company } from '../../../utils/constants';
 import { NavLink } from 'react-router-dom';
 import NavProfile from '../navBar/navProfile';
-import { useSelector } from 'react-redux';
-import { getIsLoggedIn } from '../../../store/users';
 import ButtonForDarkTheme from '../../common/buttonForDarkTheme';
 
 const Header = () => {
-  const isLoggedIn = useSelector(getIsLoggedIn());
   return (
     <div className='flex flex-wrap justify-between items-center m-5 h-[60px]'>
       <NavLink to='/'><img src={logo} alt="logo" className='max-w-[284px] max-h-[44px]'/></NavLink>

@@ -16,6 +16,7 @@ const Breadcrumb = () => {
     { name: '/user', label: ' пользователь ' },
     { name: '/user/edit', label: ' редактировать ' },
   ];
+  
   return (
     <Breadcrumbs separator=" / ">
       <NavLink to="/" className="opacity-60">

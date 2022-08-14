@@ -1,7 +1,6 @@
 import React from 'react';
 import NavBarMainPage from '../components/ui/navBar/navBarMainPage';
-import Slider from '../components/ui/slider/sliderOnMainPage';
-
+import Slider from '../components/ui/mainPage/specialOffer/specialOffer';
 
 const MainPage = () => {
   return (

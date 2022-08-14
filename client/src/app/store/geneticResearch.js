@@ -39,9 +39,9 @@ export const loadGeneticResearchList = () => async (dispatch) => {
 
 export const getGeneticResearch = () => state => state.geneticResearch.entities;
 
-export const getDroppersByIds = (droppersIds) => state => {
-  if (state.droppers.entities && droppersIds) {
-    return state.droppers.entities.find(el=>el._id === droppersIds);
+export const getGeneticResearchByIds = (geneticResearchIds) => state => {
+  if (state.geneticResearch.entities && geneticResearchIds) {
+    return state.geneticResearch.entities.find(el=>el._id === geneticResearchIds);
   }
   return [];
 };

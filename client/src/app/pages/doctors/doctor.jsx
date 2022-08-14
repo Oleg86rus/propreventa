@@ -8,7 +8,8 @@ import BackButton from '../../components/common/backButton';
 const DoctorList = () => {
   const {doctorId} = useParams();
   const { name, imageSrc, imageAlt, skills, href } = useSelector(getDoctorsByIds(doctorId));
-  const {ul, li, h1, p} = style;
+  const {ul, li, h1} = style;
+  
   return (
     <div className='mx-auto relative container flex justify-center mt-10 mb-10'>
       <BackButton/>

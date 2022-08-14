@@ -1,14 +1,14 @@
 import React from 'react';
 
 import { useSelector } from 'react-redux';
-import { getIVTherapyByIds, getIVTherapyes } from '../../store/IVTherapyes';
-import { useHistory, useParams } from 'react-router-dom';
+import { getIVTherapyByIds } from '../../store/IVTherapyes';
+import { useParams } from 'react-router-dom';
 import { style } from '../../utils/constants';
 import BackButton from '../../components/common/backButton';
 
 const IVTherapy = () => {
   const {IVTherapyId} = useParams();
-  const {name, price, imageSrc, imageAlt, description, about, composition, result, curs, text} = useSelector(getIVTherapyByIds(IVTherapyId));
+  const {name, imageSrc, imageAlt, about, composition, result} = useSelector(getIVTherapyByIds(IVTherapyId));
   const {ul, li, h1, p} = style;
 
   return (

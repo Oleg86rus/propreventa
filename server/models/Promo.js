@@ -7,4 +7,4 @@ const schema = new Schema({
   timestamps: true
 });
 
-module.exports = model('User', schema);
+module.exports = model('Promo', schema);

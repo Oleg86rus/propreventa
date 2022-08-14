@@ -4,7 +4,8 @@ import { style } from '../../utils/constants';
 
 const AnalyzesDescription = () => {
   const {title, description, href, list, listTitle} = analyzesDescriptionConst;
-  const {p,h1, ul, div, li, button} = style;
+  const {p,h1, ul, li, button} = style;
+  
   return (
     <div className=' p-4 container p-4 max-w-[970px]'>
       <h1 className={h1}>{title}</h1>

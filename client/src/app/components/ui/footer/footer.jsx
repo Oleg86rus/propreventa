@@ -1,8 +1,7 @@
 import React from 'react';
 import { company } from '../../../utils/constants';
 import { Link, NavLink } from 'react-router-dom';
-import arrow from '../../../assets/arrowFooter.png';
-import ScrollToTop from '../../common/scrollToTop';
+
 
 const Footer = () => {
   return (

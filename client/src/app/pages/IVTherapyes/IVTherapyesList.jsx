@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { getIVTherapyes } from '../../store/IVTherapyes';
 import IVTherapyesDescription
   from '../../components/common/ivTherapyesDescription';
-import { useHistory, useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import IVTherapy from './IVTherapy';
 
 const IVTherapyesList = () => {
@@ -13,6 +13,7 @@ const IVTherapyesList = () => {
   const {location} = useHistory();
   const {pathname} = location;
   const pathNames = pathname.split('/').filter((el) => el);
+  
   return (
     <>
       <Navbar/>

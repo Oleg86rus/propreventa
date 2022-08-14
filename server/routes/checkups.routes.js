@@ -1,7 +1,6 @@
 const express = require('express');
 const Checkups = require('../models/Checkups');
 const router = express.Router({mergeParams: true});
-const auth = require('../middleware/auth.middleware')
 
 // /checkups
 router.get('/', async (req, res) => {

@@ -6,7 +6,8 @@ import { style } from '../../utils/constants';
 
 const UltrasoundsDescription = () => {
   const {title, description, propreventUzi} = ultrasoundsDescriptionConst;
-  const {li, h1, p, ul} = style;
+  const {h1, p} = style;
+  
   return (
     <div className='container p-4 max-w-[970px]'>
       <h1 className={h1}>{title}</h1>

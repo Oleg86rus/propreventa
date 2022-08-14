@@ -10,6 +10,7 @@ const UserCard = ({ user }) => {
     history.push(history.location.pathname + '/edit');
   };
   const {h2, p} = style;
+  
   return (
     <div className="flex flex-col justify-between items-center min-h-[460px] min-w-[350px] max-w-sm bg-white rounded-lg border border-amber-400 shadow-md drop-shadow-xl">
       <button

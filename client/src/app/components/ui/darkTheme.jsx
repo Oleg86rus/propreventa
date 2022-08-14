@@ -13,6 +13,7 @@ const DarkTheme = () => {
     }
     localStorage.setItem('theme', theme);
   }, [theme]);
+  
   return {theme, setTheme};
 };
 

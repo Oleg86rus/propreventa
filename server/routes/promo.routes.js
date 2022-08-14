@@ -1,7 +1,6 @@
 const express = require('express');
 const Promo = require('../models/Promo')
 const router = express.Router({mergeParams: true});
-const auth = require('../middleware/auth.middleware')
 
 router.get('/', async (req, res) => {
   try {

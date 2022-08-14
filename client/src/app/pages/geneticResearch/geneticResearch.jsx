@@ -1,3 +1,5 @@
+//need to fill bd and add this page
+
 import React from 'react';
 import Navbar from '../../components/ui/navBar/navBar';
 import CardList from '../../components/ui/card/cardList';
@@ -6,7 +8,7 @@ import { getGeneticResearch } from '../../store/geneticResearch';
 
 const GeneticResearchList = () => {
   const geneticResearch = useSelector(getGeneticResearch());
-  
+
   return (
     <>
       <div className=''>

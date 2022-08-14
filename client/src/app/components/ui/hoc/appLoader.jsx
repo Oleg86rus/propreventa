@@ -13,6 +13,7 @@ import { loadGeneticResearchList } from '../../../store/geneticResearch';
 import { loadUsersList } from '../../../store/users';
 import { loadUltrasoundsList } from '../../../store/ultrasounds';
 import Loader from '../loader';
+import { loadPromoList } from '../../../store/promo';
 
 const AppLoader = ({children}) => {
   const dispatch = useDispatch();
@@ -24,8 +25,10 @@ const AppLoader = ({children}) => {
     dispatch(loadGeneticResearchList());
     dispatch(loadUsersList());
     dispatch(loadUltrasoundsList());
+    dispatch(loadPromoList());
   }, []);
   if (isLoading) return <Loader/>;
+  
   return children;
 };
 AppLoader.propTypes = {

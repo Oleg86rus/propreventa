@@ -11,6 +11,7 @@ import Loader from '../../components/ui/loader';
 const CheckupList = () => {
   const checkups = useSelector(getCheckups());
   const { checkupsId } = useParams();
+  
   return (
     <>
       {!checkups ? <Loader/> :

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink, useHistory, useParams } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   addToFavourite,
@@ -25,6 +25,7 @@ const ItemWithoutImage = ({product}) => {
     const updatedUser = {...currentUser, favourites: favourites};
     dispatch(addToFavourite(updatedUser));
   };
+  
   return (
     <>
       <div className="group text-center">

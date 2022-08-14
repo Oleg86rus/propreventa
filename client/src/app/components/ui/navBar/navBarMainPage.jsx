@@ -3,12 +3,10 @@ import { company } from '../../../utils/constants';
 import './navbarMainpage.css';
 import { NavLink } from 'react-router-dom';
 import { navList } from '../../../utils/constants';
-import { useSelector } from 'react-redux';
-import { getIsLoggedIn } from '../../../store/users';
 
 const NavbarMainPage = () => {
   const navLinkStyle = 'flex items-center justify-center h-full text-center';
-  const isLoggedIn = useSelector(getIsLoggedIn());
+  
   return (
     <div className='container flex lg:flex-wrap sm:flex-wrap md:flex-wrap m-auto justify-center gap-4 mt-10'>
       <div className='flex items-center relative w-[343px]'>

@@ -14,7 +14,7 @@ const Checkup = () => {
   const userId = useSelector(getCurrentUserId());
   const user  = useSelector(getUserById(userId));
   const auth = Object.keys(user).findIndex((el) => el === 'admin');
-  const { div, name, composition, description, price } = useSelector(getCheckupsByIds(checkupsId));
+  const { name, composition, description, price } = useSelector(getCheckupsByIds(checkupsId));
   const {h1, h2, li, ul, p, p_Price} = style;
 
   return (

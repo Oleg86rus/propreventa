@@ -8,9 +8,8 @@ import NavBar from '../../components/ui/navBar/navBar';
 
 const User = () => {
   const params = useParams();
-  const { userId, edit } = params;
+  const { userId } = params;
   const currentUserId = useSelector(getCurrentUserId());
-  // : (<Redirect to={`/users/${currentUserId}/edit`}/>))
   
   return (
     <>

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink, useHistory, useParams } from 'react-router-dom';
+import { NavLink, useHistory } from 'react-router-dom';
 import {
   addToFavourite,
   getCurrentUserId,

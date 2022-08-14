@@ -14,6 +14,7 @@ const Login = () => {
       ? 'login'
       : 'register');
   };
+  
   return (
     <div className='min-h-[700px]'>
       <NavBar/>

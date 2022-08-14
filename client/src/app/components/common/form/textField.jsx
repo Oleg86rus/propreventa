@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import {EyeIcon} from '@heroicons/react/solid';
 
-const TextField = ({ label, type, name, value, onChange, htmlFor, error }) => {
+const TextField = ({ label, type, name, value, onChange, error }) => {
   const handleChange = ({ target }) => {
     onChange({name: target.name, value: target.value});
   };
@@ -13,6 +13,7 @@ const TextField = ({ label, type, name, value, onChange, htmlFor, error }) => {
   const toggleShowPassword = () => {
     setShowPassword(prevState => !prevState);
   };
+  
   return (
     <div className="rounded-md shadow-sm -space-y-px">
       <label htmlFor={name}> {label}</label>
