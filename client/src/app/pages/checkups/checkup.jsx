@@ -11,7 +11,7 @@ import DeleteButton from '../../components/common/deleteButton';
 
 const Checkup = () => {
   const {checkupsId} = useParams();
-  const userId = useSelector(getCurrentUserId());
+  const userId = useParams();
   const user  = useSelector(getUserById(userId));
   const auth = Object.keys(user).findIndex((el) => el === 'admin');
   const { name, composition, description, price } = useSelector(getCheckupsByIds(checkupsId));
