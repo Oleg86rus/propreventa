@@ -58,8 +58,8 @@ const Favourites = () => {
           { el[1].length > 0
             ?
             <div className="grid justify-center sm:grid-cols-2 md:grid-cols-2 gap-12 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
-              {el[1].map(f => (
-                <Card product={f}/>
+              {el[1].map((f, i) => (<div key={i}>
+                <Card product={f}/></div>
               ))}
             </div>
           
