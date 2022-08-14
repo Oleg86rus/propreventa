@@ -62,7 +62,7 @@ const CreateCards = () => {
     const isValid = validate();
     if (!isValid) return;
     dispatch(createCheckup(data));
-    history.push('/');
+    history.push('/checkups');
   };
   const buttonValidate = () => {
     if (isValid) return 'mt-4 w-full items-center px-4 py-2 border border-amber-500 rounded-lg shadow-sm text-sm font-medium text-black hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600 transition-all duration-500';
