@@ -13,7 +13,7 @@ const Checkup = () => {
   const {checkupsId} = useParams();
   const userId = useParams();
   const user  = useSelector(getUserById(userId));
-  const auth = Object.keys(user).findIndex((el) => el === 'admin');
+  const auth = user ? Object.keys(user).findIndex((el) => el === 'admin') : null;
   const { name, composition, description, price } = useSelector(getCheckupsByIds(checkupsId));
   const {h1, h2, li, ul, p, p_Price} = style;
 
