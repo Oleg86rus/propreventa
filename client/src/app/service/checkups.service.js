@@ -9,7 +9,6 @@ const checkupsService = {
   },
   create: async (payload) => {
     const {data} = await httpService.post(checkupsEndPoint, payload);
-    console.log(payload);
     return data;
   },
   remove: async (checkupId) => {

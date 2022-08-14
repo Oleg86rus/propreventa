@@ -15,11 +15,9 @@ router.get('/', async (req, res) => {
 
 router.patch('/:userId', async (req, res) => {
   try {
-    console.log('req.body: ', req.body)
     // if (req.body.userId === req.user._id) {
       const updatedUser = await User.findByIdAndUpdate(req.body._id, req.body, {new: true})
       res.send(updatedUser)
-    console.log(updatedUser)
     // } else {
     //   res.status(401).json({message: 'Unauthorized'})
     // }
