@@ -130,7 +130,7 @@ export const sighUp = (payload) => async (dispatch) => {
     console.log(data);
     localStorageService.setTokens(data);
     dispatch(authRequestSuccess({ userId: data.userId }));
-    history.push('/');
+    // history.push('/');
   } catch (error) {
     dispatch(authRequestFailed(error.message));
   }
@@ -161,7 +161,7 @@ export const getCurrentUserData = () => state => {
   return state.users.entities ? state.users.entities.find(u=>u._id === state.users.auth.userId) : null;
 };
 export const getUserById = (userId) => state => {
-  if (state.users.entities) return state.users.entities.find(u => u._id === userId);
+  if (state.users.entities) return state.users.entities.filter(u => u._id === userId);
 };
 export const getIsLoggedIn = () => state => state.users.isLoggedIn;
 export const getCurrentUserId = () => state => state.users.auth.userId;

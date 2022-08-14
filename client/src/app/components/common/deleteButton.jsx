@@ -7,7 +7,6 @@ import { getCurrentUserId, getUserById } from '../../store/users';
 const DeleteButton = ({id}) => {
   const userId = useSelector(getCurrentUserId());
   const user  = useSelector(getUserById(userId));
-
   const history = useHistory();
   const dispatch = useDispatch();
   const handleClick = () => {

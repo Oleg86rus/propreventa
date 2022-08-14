@@ -1,17 +1,19 @@
 import React from 'react';
 import { Menu } from '@headlessui/react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { getCurrentUserId, getUserById } from '../../../store/users';
+import Loader from '../loader';
 
 const NavProfileMenu = () => {
-  const userId = useSelector(getCurrentUserId());
-  const user  = useSelector(getUserById(userId));
+  const userId  = useSelector(getCurrentUserId());
+  console.log(userId);
+  const user = useSelector(getUserById(userId));
+  console.log(user);
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
   }
-  const auth = Object.keys(user).findIndex((el) => el === 'admin');
-  
+  if (!user) return 'loader';
   return (
     <>
       <Menu.Item>
@@ -19,16 +21,19 @@ const NavProfileMenu = () => {
           <button
             type="submit"
             className={classNames(
-              active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
+              active
+                ? 'bg-gray-100 text-gray-900'
+                : 'text-gray-700',
               'block w-full text-left px-4 py-2 text-sm'
             )}
           >
-            <NavLink to='/user' className='inline-block w-full'>Профиль</NavLink>
+            <NavLink to='/user'
+              className='inline-block w-full'>Профиль</NavLink>
           </button>
         )}
       </Menu.Item>
       <Menu.Item>
-        {({ active }) => (
+        {({active}) => (
           <button
             type="submit"
             className={classNames(
@@ -40,8 +45,8 @@ const NavProfileMenu = () => {
           </button>
         )}
       </Menu.Item>
-      {auth > 0 ? <Menu.Item>
-        {({ active }) => (
+      {user.admin ? <Menu.Item>
+        {({active}) => (
           <button
             type="submit"
             className={classNames(
@@ -54,7 +59,7 @@ const NavProfileMenu = () => {
         )}
       </Menu.Item> : null}
       <Menu.Item>
-        {({ active }) => (
+        {({active}) => (
           <button
             type="submit"
             className={classNames(
