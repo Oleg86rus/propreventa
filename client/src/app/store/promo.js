@@ -1,5 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
-import promoService from '../service/doctors.service';
+import promoService from '../service/promo.service';
 
 const promoSlice = createSlice({
   name: 'doctor',
