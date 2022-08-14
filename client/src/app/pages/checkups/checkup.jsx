@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import {
   getCheckupsByIds
@@ -6,21 +6,23 @@ import {
 import { useParams } from 'react-router-dom';
 import { style } from '../../utils/constants';
 import BackButton from '../../components/common/backButton';
-import { getCurrentUserId, getUserById } from '../../store/users';
+import {
+  getCurrentUserId,
+  getIsLoggedIn,
+  getUserById,
+} from '../../store/users';
 import DeleteButton from '../../components/common/deleteButton';
 
 const Checkup = () => {
-  const {checkupsId} = useParams();
-  const userId = useParams();
-  const user  = useSelector(getUserById(userId));
-  const auth = user ? Object.keys(user).findIndex((el) => el === 'admin') : null;
+  const { checkupsId } = useParams();
+  const isAuth = useSelector(getIsLoggedIn());
   const { name, composition, description, price } = useSelector(getCheckupsByIds(checkupsId));
-  const {h1, h2, li, ul, p, p_Price} = style;
+  const {h1, h2, li, ul, p_Price} = style;
 
   return (
     <div className='mx-auto container relative mt-15 min-h-[1000px]'>
       <BackButton/>
-      {auth > 0 && <DeleteButton/>}
+      {isAuth ? <DeleteButton id={checkupsId}/> : null}
       <h1 className={`${h1} mb-5`}>{name}</h1>
       <div className='flex flex-col items-center relative'>
         <div className='absolute'>
