@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "imageSrc": "http://176.119.147.53/promo/biohim.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 2,
+    "imageSrc": "http://176.119.147.53/promo/childInf.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 3,
+    "imageSrc": "http://176.119.147.53/promo/hospitalization.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 4,
+    "imageSrc": "http://176.119.147.53/promo/vitD.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 5,
+    "imageSrc": "http://176.119.147.53/promo/difVit.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 6,
+    "imageSrc": "http://176.119.147.53/promo/ippp.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 7,
+    "imageSrc": "http://176.119.147.53/promo/mite.jpg",
+    "imageAlt": "promo"
+  },
+  {
+    "id": 8,
+    "imageSrc": "http://176.119.147.53/promo/traveler.jpg",
+    "imageAlt": "promo"
+  },
+  {
+  "id": 9,
+  "imageSrc": "http://176.119.147.53/promo/ccz.jpg",
+  "imageAlt": "promo"
+}
+]

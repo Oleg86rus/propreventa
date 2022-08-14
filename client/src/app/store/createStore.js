@@ -5,6 +5,7 @@ import geneticResearchReducer from './geneticResearch';
 import usersReducer from './users';
 import IVTherapyesReducer from './IVTherapyes';
 import ultrasoundsReducer from './ultrasounds';
+import promoReducer from './promo';
 
 const rootReducer = combineReducers({
   checkups: checkupsReducer,
@@ -12,7 +13,8 @@ const rootReducer = combineReducers({
   IVTherapyes: IVTherapyesReducer,
   geneticResearch: geneticResearchReducer,
   users: usersReducer,
-  ultrasounds: ultrasoundsReducer
+  ultrasounds: ultrasoundsReducer,
+  promo: promoReducer
 });
 
 export function createStore() {

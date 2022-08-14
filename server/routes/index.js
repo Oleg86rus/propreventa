@@ -9,6 +9,7 @@ router.use('/geneticResearch', require('./geneticResearch.routes'));
 router.use('/user', require('./user.routes'));
 router.use('/ultrasounds', require('./ultrasounds.routes'));
 router.use('/services', require('./services.routes'));
+router.use('/promo', require('./promo.routes'));
 
 
 module.exports = router;

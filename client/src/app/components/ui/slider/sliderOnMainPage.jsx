@@ -5,20 +5,13 @@ import 'swiper/css/autoplay';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import img1 from '../../../assets/specialOffer/путешественник-01.jpg';
-import img2 from '../../../assets/specialOffer/клещ-02.jpg';
-import img3 from '../../../assets/specialOffer/дефицитВитаминов-07.jpg';
-import img4 from '../../../assets/specialOffer/ссз-05.jpg';
-import img5 from '../../../assets/specialOffer/иппп-04.jpg';
-import img6 from '../../../assets/specialOffer/детскиеИнфекции-04.jpg';
-import img7 from '../../../assets/specialOffer/госпитализация-04.jpg';
-import img8 from '../../../assets/specialOffer/витаминД-03.jpg';
-import img9 from '../../../assets/specialOffer/биохимия-02.jpg';
 import Loader from '../loader';
 import { style } from '../../../utils/constants';
+import { useSelector } from 'react-redux';
+import { getPromo } from '../../../store/promo';
 
 const Slider = () => {
-  const userSlider = [img1, img2, img3, img4, img5, img6, img7, img8, img9];
+  const promo = useSelector(getPromo());
   const {h1} = style;
   setTimeout(() => {
     return <Loader/>;
@@ -37,9 +30,9 @@ const Slider = () => {
               navigation
               autoplay='300'
             >
-              {userSlider.map( (el, i) => (
+              {promo.map( (el, i) => (
                 <SwiperSlide key={i}>
-                  <img className='w-full h-full object-center object-cover' src={el} alt="promo"/>
+                  <img className='w-full h-full object-center object-cover' src={el.imageSrc} alt={el.imageAlt}/>
                 </SwiperSlide>
               ))}
             </Swiper>

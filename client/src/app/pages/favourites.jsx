@@ -52,7 +52,7 @@ const Favourites = () => {
   return (
     <>
       <NavBar/>
-      {favourites && currentUserId ? <div className='container flex flex-col items-center mt-5 mb-5'>
+      {favourites && currentUserId ? <div className='mx-auto container flex flex-col items-center mt-5 mb-5'>
         {Object.entries(favouritesCards).map((el, i) => <div key={i}>
           <h2 className={`${h2} mt-5 mb-5`}>{titleFavourite(el[0])}</h2>
           { el[1].length > 0
