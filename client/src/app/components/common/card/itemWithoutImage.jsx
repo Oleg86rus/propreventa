@@ -5,9 +5,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToFavourite, getUserById } from '../../../store/users';
 
 const ItemWithoutImage = ({product}) => {
-  const {userId} = useParams();
   const dispatch = useDispatch();
-  // const userId = useSelector(getCurrentUserId());
+  const userId = useSelector(getCurrentUserId());
   const currentUser = useSelector(getUserById(userId));
   const { location } = useHistory();
   const formClassName = 'flex flex-col justify-between items-center p-6 min-w-[220px] min-h-[400px] max-w-sm bg-white rounded-lg border border-amber-200 shadow-md hover:drop-shadow-xl hover:animate-card-up animate-card-down duration-300';

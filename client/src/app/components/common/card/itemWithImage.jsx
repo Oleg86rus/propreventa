@@ -5,11 +5,10 @@ import { addToFavourite, getUserById } from '../../../store/users';
 import { useDispatch, useSelector } from 'react-redux';
 
 const ItemWithImage = ({product}) => {
-  const {userId} = useParams();
   const {location} = useHistory();
   const {_id, imageSrc, imageAlt, name, price, skills, description} = product;
   const dispatch = useDispatch();
-  // const userId = useSelector(getCurrentUserId());
+  const userId = useSelector(getCurrentUserId());
   const currentUser = useSelector(getUserById(userId));
   const handleClicker = () => {
     const prodId = product._id;
