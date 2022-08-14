@@ -2,7 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink, useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToFavourite, getUserById } from '../../../store/users';
+import {
+  addToFavourite,
+  getCurrentUserId,
+  getUserById,
+} from '../../../store/users';
 
 const ItemWithoutImage = ({product}) => {
   const dispatch = useDispatch();

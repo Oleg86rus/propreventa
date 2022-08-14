@@ -1,7 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink, useHistory, useParams } from 'react-router-dom';
-import { addToFavourite, getUserById } from '../../../store/users';
+import {
+  addToFavourite,
+  getCurrentUserId,
+  getUserById,
+} from '../../../store/users';
 import { useDispatch, useSelector } from 'react-redux';
 
 const ItemWithImage = ({product}) => {
