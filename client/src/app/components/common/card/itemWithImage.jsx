@@ -1,27 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { NavLink, useHistory, useParams } from 'react-router-dom';
-import {
-  addToFavourite,
-  getCurrentUserId,
-  getUserById,
-} from '../../../store/users';
-import { useDispatch, useSelector } from 'react-redux';
+import { NavLink, useHistory } from 'react-router-dom';
+import ButtonAddToFavourite from '../buttonAddToFavourite';
 
 const ItemWithImage = ({product}) => {
-  const {userId} = useParams();
   const {location} = useHistory();
   const {_id, imageSrc, imageAlt, name, price, skills, description} = product;
-  const dispatch = useDispatch();
-  // const userId = useSelector(getCurrentUserId());
-  const currentUser = useSelector(getUserById(userId));
-  const handleClicker = () => {
-    const prodId = product._id;
-    const favourites = [...currentUser.favourites];
-    favourites.push(prodId);
-    const updatedUser = {...currentUser, favourites: favourites};
-    dispatch(addToFavourite(updatedUser));
-  };
   
   return (
     <div className="group text-center min-h-[650px] min-w-[300px]">
@@ -47,8 +31,7 @@ const ItemWithImage = ({product}) => {
         >
           Подробнее
         </NavLink>
-        <button className=' mt-1 className="inline-flex items-center px-4 py-2 border border-amber-500 rounded-[10px] shadow-sm text-sm font-medium text-black hover:bg-amber-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-500 transition-all duration-500"' onClick={() => handleClicker()}>Добавить в избранное</button>
-
+        <ButtonAddToFavourite/>
       </div>
       
     </div>
