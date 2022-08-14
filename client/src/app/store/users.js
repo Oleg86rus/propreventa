@@ -3,6 +3,7 @@ import userService from '../service/user.service';
 import authService from '../service/auth.service';
 import localStorageService from '../service/localStorage.service';
 import { generateAuthError } from '../utils/generateAuthError';
+import { useHistory } from 'react-router-dom';
 
 const initialState = localStorageService.getAccessToken() ? {
   entities: null,
@@ -127,10 +128,9 @@ export const sighUp = (payload) => async (dispatch) => {
   dispatch(authRequested());
   try {
     const data = await authService.register(payload);
-    console.log(data);
     localStorageService.setTokens(data);
     dispatch(authRequestSuccess({ userId: data.userId }));
-    // history.push('/');
+    window.location.assign('/');
   } catch (error) {
     dispatch(authRequestFailed(error.message));
   }
@@ -156,12 +156,12 @@ export const updateUser = (payload) => async (dispatch) => {
     dispatch(userUpdateFailed(error.message));
   }
 };
-
+export const getUsersList = () => state => state.users.entities;
 export const getCurrentUserData = () => state => {
   return state.users.entities ? state.users.entities.find(u=>u._id === state.users.auth.userId) : null;
 };
 export const getUserById = (userId) => state => {
-  if (state.users.entities) return state.users.entities.filter(u => u._id === userId);
+  if (state.users.entities) return state.users.entities.find(u => u._id === userId);
 };
 export const getIsLoggedIn = () => state => state.users.isLoggedIn;
 export const getCurrentUserId = () => state => state.users.auth.userId;

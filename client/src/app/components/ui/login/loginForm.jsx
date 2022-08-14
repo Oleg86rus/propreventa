@@ -45,7 +45,9 @@ const LoginForm = () => {
     const isValid = validate();
     if (!isValid) return;
     dispatch(login({payload: data}));
-    history.push('/');
+    setTimeout(() => {
+      history.push('/');
+    }, 500);
   };
   
   return (

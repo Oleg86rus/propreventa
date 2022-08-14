@@ -2,9 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink, useHistory, useParams } from 'react-router-dom';
 import ButtonAddToFavourite from '../buttonAddToFavourite';
+import { useSelector } from 'react-redux';
+import { getCurrentUserId, getIsLoggedIn } from '../../../store/users';
+import { getDoctors } from '../../../store/doctors';
+import { getCheckups } from '../../../store/checkups';
+import { getIVTherapyes } from '../../../store/IVTherapyes';
+import { getUltrasounds } from '../../../store/ultrasounds';
+import { getGeneticResearch } from '../../../store/geneticResearch';
+import Loader from '../../ui/loader';
 
 const ItemWithImage = ({product}) => {
-  const {userId} = useParams();
+  const isAuth = useSelector(getIsLoggedIn());
+  const userId = useSelector(getCurrentUserId());
   const {location} = useHistory();
   const {_id, imageSrc, imageAlt, name, price, skills, description} = product;
   
@@ -32,9 +41,8 @@ const ItemWithImage = ({product}) => {
         >
           Подробнее
         </NavLink>
-        {userId && <ButtonAddToFavourite/>}
+        {isAuth && userId && <ButtonAddToFavourite id={_id}/>}
       </div>
-      
     </div>
   );
 };

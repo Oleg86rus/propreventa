@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { style } from '../../../utils/constants';
-
+// import his
 
 const UserCard = ({ user }) => {
   const history = useHistory();

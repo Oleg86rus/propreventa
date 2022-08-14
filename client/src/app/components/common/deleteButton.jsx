@@ -3,11 +3,12 @@ import { useHistory } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { loadCheckupsList, removeCheckup } from '../../store/checkups';
 import { getCurrentUserId, getUserById } from '../../store/users';
+import history from '../../utils/history';
 
 const DeleteButton = ({id}) => {
   const userId = useSelector(getCurrentUserId());
   const user  = useSelector(getUserById(userId));
-  const history = useHistory();
+  // const history = useHistory();
   const dispatch = useDispatch();
   const handleClick = () => {
     dispatch(removeCheckup(id));

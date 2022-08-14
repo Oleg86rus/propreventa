@@ -34,7 +34,6 @@ export const loadIVTherapyesList = () => async (dispatch) => {
     const { content } = await IVTherapyesService.get();
     dispatch(IVTherapyesReceived(content));
   } catch (error) {
-    console.log(error);
     dispatch(IVTherapyesRequestedFailed(error.message));
   }
 };

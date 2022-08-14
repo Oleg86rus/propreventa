@@ -4,16 +4,20 @@ import { getDoctorsByIds } from '../../store/doctors';
 import { useParams } from 'react-router-dom';
 import { style } from '../../utils/constants';
 import BackButton from '../../components/common/backButton';
+import Loader from '../../components/ui/loader';
 
 const DoctorList = () => {
   const {doctorId} = useParams();
-  const { name, imageSrc, imageAlt, skills, href } = useSelector(getDoctorsByIds(doctorId));
+  const doctor = useSelector(getDoctorsByIds(doctorId));
+  const { name, imageSrc, imageAlt, skills, href } = doctor;
   const {ul, li, h1} = style;
   
   return (
-    <div className='mx-auto relative container flex justify-center mt-10 mb-10'>
-      <BackButton/>
-      {skills &&
+    <>
+      { doctor ?
+        <div className='mx-auto relative container flex justify-center mt-10 mb-10'>
+          <BackButton/>
+          {skills &&
       <div className=' pt-16 max-w-lg flex flex-col items-center gap-2'>
         <div
           className="w-full aspect-w-1 aspect-h-1 bg-gray-200 rounded-[10px] overflow-hidden xl:aspect-w-7 xl:aspect-h-8">
@@ -32,7 +36,9 @@ const DoctorList = () => {
           <a href={href} target='_blank'>Записаться онлайн</a>
         </button>
       </div>}
-    </div>
+        </div>
+        : <Loader/>}
+    </>
   );
 };
 
