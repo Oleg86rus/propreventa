@@ -17,7 +17,7 @@ const ButtonForDarkTheme = () => {
   };
   
   return (
-    <div className="ml-16 relative flex flex-col items-center justify-center overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center overflow-hidden">
       <div className="flex">
         <label className="inline-flex relative items-center mr-5 cursor-pointer">
           <input
