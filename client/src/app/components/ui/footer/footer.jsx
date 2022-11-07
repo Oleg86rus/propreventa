@@ -5,8 +5,8 @@ import { Link, NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <div className='bg-footerBG text-white w-full flex items-center'>
-      <div className="container mx-auto flex justify-between items-center h-[374px]">
+    <div className='absolute inset-x-0 bottom-auto bg-footerBG text-white w-screen mx-auto'>
+      <div className=" container mx-auto flex justify-between items-center min-h-[374px]">
         <div>
           <Link to='/'>{company.name.toUpperCase()}</Link>
           <a href=""></a>

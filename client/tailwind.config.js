@@ -53,7 +53,7 @@ module.exports = {
       // '2xl': {'min': '1536px'}
     },
     container: {
-      'center': true,
+      'center': true
     }
   },
   plugins: [],
