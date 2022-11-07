@@ -22,7 +22,7 @@ import CreateCards from './pages/user/createCards';
 function App() {
 
   return (
-    <div>
+    <div className='container'>
       <AppLoader>
         <Header/>
         <Switch>

@@ -7,7 +7,7 @@ import ButtonForDarkTheme from '../../common/buttonForDarkTheme';
 
 const Header = () => {
   return (
-    <div className='flex flex-wrap justify-between items-center m-5 h-[60px]'>
+    <div className='container flex flex-wrap xs:justify-center sm:justify-between items-center m-5 min-h-[60px] gap-8 '>
       <NavLink to='/'><img src={logo} alt="logo" className='max-w-[284px] max-h-[44px]'/></NavLink>
       <ButtonForDarkTheme/>
       <div className='flex h-full'>
