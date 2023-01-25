@@ -1,5 +1,5 @@
 {
-  "port": 8080,
+  "port": 8081,
   "mongoUri": "mongodb+srv://oleg:0JH5WSJNpznDMRk5@proprevent.3l2yx.mongodb.net/?retryWrites=true&w=majority",
   "accessSecret": "super secret from BACKEND",
   "refreshSecret": "super refresh key"
