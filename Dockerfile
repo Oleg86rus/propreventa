@@ -16,6 +16,8 @@ WORKDIR /app
 
 COPY server/package.json /app
 
+COPY server/nginx-conf/nginx.conf /etc/nginx/nginx.conf
+
 RUN npm install
 
 COPY server /app
